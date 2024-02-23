@@ -1,0 +1,296 @@
+body {
+    font-family: __interFont_301929, __interFont_Fallback_301929, sans-serif, ui-sans-serif;
+    width: 100%;
+}
+#menu{
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+}
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#menu a{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    text-decoration: none;
+}
+#menu a:hover{
+    color: rgb(28,219,188);
+}
+#menu li{
+    margin-left: 26px;
+}
+h1{
+    color: white;
+    text-decoration: none;
+}
+#home h2{
+    font-size: 4rem;
+    text-align: center;
+    line-height: 4.875rem;
+    letter-spacing: normal;
+}
+#home p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+    letter-spacing: normal;
+}
+#info {
+    display: flex;
+    height: 90vh;
+}
+
+.introduction {
+    padding: 8rem 2rem 8rem 4.5rem;
+    width: 50%;
+}
+
+.introduction h2 {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.introduction p {
+    line-height: 1.625rem;
+    margin-bottom: 2rem;
+    letter-spacing: normal;
+}
+
+#info h2 {
+    font-size: 48px;
+}
+
+#info p {
+    font-size: 18px;
+}
+
+.image_cover {
+    background-image: url("../img/GettyImages-1029518538.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+p.push {
+    font-size: 1rem;
+    background-color: rgb(28,219,188);
+    display: inline-block;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 24px;
+    cursor: pointer;
+    line-height: 1rem;
+}
+
+p.push:hover {
+    background-color: #8bf5e3;
+}
+
+#compétences {
+    color: white;
+    background: black;
+    display: flex;
+}
+
+#titre_compétences {
+    width: 45%;
+}
+
+#titre_compétences h2 {
+    font-size: 3rem;
+    padding: 6.25rem 9.25rem 0 2rem;
+}
+
+.all_skills {
+    width: 55%;
+}
+
+.all_skills article h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.all_skills article p {
+    font-size: 1.25rem;
+}
+
+.all_skills img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+#projet_cours {
+    display: flex;
+    height: 90vh;
+}
+
+.projet__cours {
+    width: 50%;
+    padding: 7.875rem 1.25rem 0 2rem;
+}
+
+.projet__cours h2 {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.projet__cours p {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    margin-bottom: 2rem;
+    letter-spacing: normal;
+}
+
+.image_cover_1 {
+    background-image: url("../img/web-images.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#projets {
+    background-color: #F7F5F5;
+}
+
+/*article:hover {
+    background-color: black;
+    color: white;
+}
+
+article h4 {
+    font-size: 24px;
+}
+
+article p {
+    font-size: 1rem;
+}*/
+
+.more {
+    color: #8BF5E3FF;
+    text-decoration: none;
+}
+
+.more:hover {
+    color: white;
+}
+
+#contact {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+#contact h2 {
+    font-size: 64px;
+    line-height: 78px;
+    padding-top: 117px;
+}
+
+#contact p {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.hepl_logo img {
+    width: 275px;
+    height: 144px;
+}
+
+.hepl_logo img:hover {
+    cursor: pointer;
+}
+
+label {
+    font-size: 13px;
+}
+
+#contact div {
+    margin-top: 25px;
+}
+
+input {
+    padding: 10px 20px 10px 10px;
+}
+
+input, select, textarea {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+#accord {
+    margin-bottom: 41px;
+}
+
+button {
+    background-color: rgb(28,219,188);
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 24px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 121px;
+}
+
+button:hover {
+    background-color: #8bf5e3;
+}
+
+#link a, .hepl_logo p {
+    /*color: white;*/
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#link a:hover, .hepl_logo p:hover {
+    color: rgb(28,219,188);
+}
+
+/*footer {
+    background-color: #063637;
+}
+
+footer nav a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    padding: 19px 30px 19px 0;
+}
+
+footer nav a:hover {
+    color: rgb(28,219,188);
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer nav li {
+    position: relative;
+    text-align: center;
+}
+
+footer :first-child {
+    margin-left: 50px;
+}*/
