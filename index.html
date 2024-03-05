@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header id="menu" itemscope itemtype="https://schema.org/Person">
-    <h1 aria-level="1" itemscope itemtype="https://schema.org/Person" itemprop="givenName">Luca Lemaire</h1>
-    <!--<p itemprop="givenName">Luca Lemaire</p>-->
+<header id="menu" itemscope itemtype="https://schema.org/Person" style="display: none">
+    <h1 aria-level="1" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Luca</span>
+        <span itemprop="familyName">Lemaire</span></h1>
     <nav>
         <ul>
             <li><a href="#">Informations
@@ -37,24 +37,23 @@
 </header>
 <main>
     <section id="home" itemscope itemtype="http://schema.org/Person">
-        <h2 aria-level="2"><span itemprop="givenName">Luca</span> <span itemprop="familyName">Lemaire</span></h2>
-        <p><span itemprop="description">je suis un jeune étudiant plein de dynamisme, je suis actuellement
+        <div class="home_content">
+            <h2 aria-level="2"><span itemprop="givenName">Luca</span> <span itemprop="familyName">Lemaire</span></h2>
+            <p><span itemprop="description">Je suis un jeune étudiant plein de dynamisme, je suis actuellement
             en deuxième année d'un bachelier en infographie dans l'option web.</span></p>
+        </div>
         <p class="push">Regarder la vidéo</p>
     </section>
     <section id="info" itemscope itemtype="http://schema.org/Person">
         <div class="image_cover"></div>
         <div class="introduction">
-            <h2 aria-level="2">Découvrez qui suis-je</h2>
+            <h2 aria-level="2">Découvrez qui je suis</h2>
             <p>Je suis un étudiant en 2ème année en infographie à la Haute École de la Province de Liège,
                 dans la section web. Passionné par la conception graphique et le développement web,
                 j'acquiers actuellement des compétences approfondies dans le domaine. Au sein de mon cursus,
                 j'explore divers aspects de la création visuelle et de la programmation, cherchant à fusionner
-                l'esthétique et la fonctionnalité dans mes projets. Grâce à mon engagement académique et à ma
-                détermination,
-                je m'épanouis dans le monde dynamique de l'infographie, contribuant ainsi à l'évolution constante de mes
-                compétences et à ma préparation pour une carrière réussie dans le domaine du web.</p>
-            <p class="push">Découvrez-moi</p>
+                l'esthétique et la fonctionnalité dans mes projets.</p>
+            <a class="push">Découvrez-moi</a>
         </div>
     </section>
     <section id="compétences" itemscope itemtype="http://schema.org/Skills">
@@ -62,77 +61,92 @@
             <h2 aria-level="2">Mes compétences</h2>
             <p>Toutes ses compétences ont été développées et entretenues tout au long de mon parcours dans un bachelier
                 en infographie. Au fil de cette formation, j’ai perfectionné mes compétences dans le domaine.</p>
-            <p class="push">Découvrez-moi</p>
+            <a class="push">Découvrez-moi</a>
         </div>
         <div class="all_skills">
             <article>
                 <img src="img/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML">
-                <h4 aria-level="4"><abbr title="HyperText Markup Language">HTML</abbr></h4>
-                <p><abbr title="HyperText Markup Language">HTML</abbr> (HyperText Markup Language) : Découvert lors de
-                    ma première année de bachelier en web, <abbr title="HyperText Markup Language">HTML</abbr> est le
-                    langage de balisage utilisé pour structurer les pages web.
-                </p>
+                <div>
+                    <h4 aria-level="4"><abbr title="HyperText Markup Language">HTML</abbr></h4>
+                    <p><abbr title="HyperText Markup Language">HTML</abbr> (HyperText Markup Language) : Découvert lors
+                        de
+                        ma première année de bachelier en web, <abbr title="HyperText Markup Language">HTML</abbr> est
+                        le
+                        langage de balisage utilisé pour structurer les pages web.
+                    </p>
+                </div>
             </article>
             <article>
                 <img src="img/PHP-logo.svg.png" alt="Logo PHP">
-                <h4 aria-level="4"><abbr title="Hypertext Preprocessor">PHP</abbr></h4>
-                <p><abbr title="Hypertext Preprocessor">PHP</abbr> (Hypertext Preprocessor) : Au cours de ma deuxième
-                    année de bachelier en web, j'ai exploré <abbr title="Hypertext Preprocessor">PHP</abbr>,
-                    un langage de script côté serveur utilisé pour le développement d'applications web dynamiques,
-                    notamment l'interaction avec les bases de données.</p>
+                <div>
+                    <h4 aria-level="4"><abbr title="Hypertext Preprocessor">PHP</abbr></h4>
+                    <p><abbr title="Hypertext Preprocessor">PHP</abbr> (Hypertext Preprocessor) : Au cours de ma
+                        deuxième
+                        année de bachelier en web, j'ai exploré <abbr title="Hypertext Preprocessor">PHP</abbr>,
+                        un langage de script côté serveur utilisé pour le développement d'applications web dynamiques,
+                        notamment l'interaction avec les bases de données.</p>
+                </div>
             </article>
             <article>
-                <img src="img/CSS3_logo_and_wordmark.svg.png" alt="Logo CSS">
-                <h4 aria-level="4"><abbr title="Cascading Style Sheets">CSS</abbr></h4>
-                <p><abbr title="Cascading Style Sheets">CSS</abbr> (Cascading Style Sheets) : Au cours de ma première
-                    année de bachelier en web, j'ai exploré <abbr title="Cascading Style Sheets">CSS</abbr>,
-                    le langage de feuilles de style qui permet de styliser et mettre en page le contenu
-                    <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+                <img src="img/css.png" alt="Logo CSS">
+                <div>
+                    <h4 aria-level="4"><abbr title="Cascading Style Sheets">CSS</abbr></h4>
+                    <p><abbr title="Cascading Style Sheets">CSS</abbr> (Cascading Style Sheets) : Au cours de ma
+                        première
+                        année de bachelier en web, j'ai exploré <abbr title="Cascading Style Sheets">CSS</abbr>,
+                        le langage de feuilles de style qui permet de styliser et mettre en page le contenu
+                        <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+                </div>
             </article>
             <article>
                 <img src="img/JavaScript-Logo.png" alt="Logo JAVASCRIPT">
-                <h4 aria-level="4">JAVASCRIPT</h4>
-                <p>JavaScript : Découvert au cours de ma deuxième année de bachelier en web, JavaScript s'est
-                    révélé être un langage de programmation côté client essentiel pour rendre les
-                    pages web interactives et dynamiques.</p>
+                <div>
+                    <h4 aria-level="4">JAVASCRIPT</h4>
+                    <p>JavaScript : Découvert au cours de ma deuxième année de bachelier en web, JavaScript s'est
+                        révélé être un langage de programmation côté client essentiel pour rendre les
+                        pages web interactives et dynamiques.</p>
+                </div>
             </article>
             <article>
                 <img src="img/adobe-photoshop-logo-0.png" alt="Logo PHOTOSHOP">
-                <h4 aria-level="4">PHOTOSHOP</h4>
-                <p>Durant ma première année de bachelier en web, j'ai appris à utiliser Photoshop,
-                    un logiciel de retouche d'images et de création graphique, particulièrement utile pour l'édition
-                    de photos et la conception visuelle.</p>
+                <div>
+                    <h4 aria-level="4">PHOTOSHOP</h4>
+                    <p>Durant ma première année de bachelier en web, j'ai appris à utiliser Photoshop,
+                        un logiciel de retouche d'images et de création graphique, particulièrement utile pour l'édition
+                        de photos et la conception visuelle.</p>
+                </div>
             </article>
             <article>
-                <img src="img/Illustrator-Logo.png" alt="Logo ILLUSTRATOR">
-                <h4 aria-level="4">ILLUSTRATOR</h4>
-                <p>Au cours de ma première année en web, j'ai exploré Illustrator, un logiciel de
-                    création graphique vectorielle essentiel pour concevoir des logos, des illustrations et des
-                    éléments graphiques.</p>
+                <img src="img/Illustrator.png" alt="Logo ILLUSTRATOR">
+                <div>
+                    <h4 aria-level="4">ILLUSTRATOR</h4>
+                    <p>Au cours de ma première année en web, j'ai exploré Illustrator, un logiciel de
+                        création graphique vectorielle essentiel pour concevoir des logos, des illustrations et des
+                        éléments graphiques.
+                    </p>
+                </div>
             </article>
             <article>
                 <img src="img/a6a4bfb514e96ecf6fdbb6cce692cc48.png" alt="Logo MAYA">
-                <h4 aria-level="4">MAYA</h4>
-                <p>Découvert en première année de bachelier, Maya est un logiciel de modélisation 3D utilisé pour
-                    créer des animations, des effets visuels et des jeux.</p>
+                <div>
+                    <h4 aria-level="4">MAYA</h4>
+                    <p>Découvert en première année de bachelier, Maya est un logiciel de modélisation 3D utilisé pour
+                        créer des animations, des effets visuels et des jeux.
+                    </p>
+                </div>
             </article>
         </div>
     </section>
     <section id="projet_cours" itemscope itemtype="http://schema.org/CreativeWork">
+        <div class="image_cover_1"></div>
         <div class="projet__cours">
             <h2 aria-level="2">Projet en cours</h2>
             <p>Je travaille actuellement sur un projet de l'<abbr title="association sans but lucratif">ASBL</abbr>,
-                dans le
-                cadre
-                de mon cursus en infographie à l'école. L'objectif est d'aider les sans-abri en utilisant mes
-                compétences en
-                développement. Je m'efforce de créer une initiative efficace, fournissant des outils pour faciliter
-                l'accès
-                aux
-                services essentiels et améliorer leur qualité de vie.</p>
-            <p class="push">En savoir plus</p>
+                dans le cadre de mon cursus en infographie à l'école. L'objectif est d'aider les sans-abri en utilisant
+                mes compétences en développement. Je m'efforce de créer une initiative efficace, fournissant des
+                outils pour faciliter l'accès aux services essentiels et améliorer leur qualité de vie.</p>
+            <a class="push">En savoir plus</a>
         </div>
-        <div class="image_cover_1"></div>
     </section>
     <section id="projets" itemscope itemtype="http://schema.org/CollectionPage">
         <div class="titre">
@@ -140,62 +154,79 @@
             <p>Tous ces projets ont été réalisés dans le cadre de mon cursus scolaire en tant qu'infographiste
                 au sein de la Haute École de la Province de Liège.</p>
         </div>
-        <article id="Portfolio">
-            <!--<img src="" alt="Image Portfolio">-->
-            <h4 aria-level="4">Portfolio</h4>
-            <p>Ce projet va me permettre de montrer mon plein potentiel et mes capacités dans le web réuni dans une
-                simple url
-                résumant tous les projets que j'aurais pu entreprendre que ça soit dans le cadre de mon bachelier ou
-                bien hors scolaire</p>
-            <a href="#" class="more">Lire plus ></a>
-        </article>
-        <article id="Client">
-            <!--<img src="./img/logo_SEF.jpg" alt="Image projet client">-->
-            <h4 aria-level="4">Projet Client</h4>
-            <p>Ce projet nous a été attribué dans le cadre de notre programme scolaire en deuxième année
-                de la filière web de ce bachelier. Il s'agit d'un projet visant à redonner vie au site web
-                détenu par l'<abbr title="association sans but lucratif">ASBL</abbr> de Huy.</p>
-            <a href="#" class="more">Lire plus ></a>
-        </article>
-        <article id="Minds">
-            <img src="./img/2Minds-1.png" alt="Image 2Minds">
-            <h4 aria-level="4">2Minds</h4>
-            <p>Au cours de mon cursus scolaire, j'ai eu l'opportunité de concevoir ma propre
-                application mobile permettant aux utilisateurs de tenir un journal intime des émotions</p>
-            <a href="#" class="more">Lire plus ></a>
-        </article>
-        <p class="push">Découvrez mes projets</p>
+        <div class="projet_ecole">
+            <article id="Portfolio">
+                <img src="./img/portfolio.jpg" alt="Image Portfolio">
+                <div>
+                    <h4 aria-level="4">Portfolio</h4>
+                    <p>Ce projet va me permettre de montrer mon plein potentiel et mes capacités dans le web réuni dans
+                        une
+                        simple url
+                        résumant tous les projets que j'aurais pu entreprendre que ça soit dans le cadre de mon
+                        bachelier ou
+                        bien hors scolaire</p>
+                    <a href="#" class="more">Lire plus ></a>
+                </div>
+            </article>
+            <article id="Client">
+                <img src="./img/logo_SEF.jpg" alt="Image projet client">
+                <div>
+                    <h4 aria-level="4">Projet Client</h4>
+                    <p>Ce projet nous a été attribué dans le cadre de notre programme scolaire en deuxième année
+                        de la filière web de ce bachelier. Il s'agit d'un projet visant à redonner vie au site web
+                        détenu par l'<abbr title="association sans but lucratif">ASBL</abbr> de Huy.</p>
+                    <a href="#" class="more">Lire plus ></a>
+                </div>
+            </article>
+            <article id="Minds">
+                <img src="./img/2Minds-1.png" alt="Image 2Minds">
+                <div>
+                    <h4 aria-level="4">2Minds</h4>
+                    <p>Au cours de mon cursus scolaire, j'ai eu l'opportunité de concevoir ma propre
+                        application mobile permettant aux utilisateurs de tenir un journal intime des émotions</p>
+                    <a href="#" class="more">Lire plus ></a>
+                </div>
+            </article>
+        </div>
+
+        <a class="push">Découvrez mes projets</a>
     </section>
     <section id="parcours" itemscope itemtype="http://schema.org/EducationalOrganization">
         <div class="left">
-            <div class="code"></div>
+            <img src="img/Code.png"
+                 width="148"
+                 height="209">
             <h2 aria-level="2">Infographie</h2>
             <p>Actuellement en deuxième année d'un bachelier en infographie à la Haute École de la Province de Liège,
                 sur le site de Seraing, avec une spécialisation dans la section web. Cette option me permettra de
                 devenir développeur web grâce aux techniques que j'apprends tout au long de mon cursus.</p>
         </div>
-        <div class="top_right">
-            <h2 aria-level="2">Écriture multimédia</h2>
-            <p>Début de l'année scolaire 2021-2022, j'ai rejoint la Haute École de la Province de Liège au campus
-                2000, situé sur le site de Jemeppe, afin de suivre des études en écriture multimédia. Cependant,
-                je me suis finalement réorienté une dernière fois vers Seraing pour poursuivre des études dans le
-                domaine du web.</p>
-            <p class="explore">Découvrir</p>
+        <div class="right">
+            <div class="top_right">
+                <h2 aria-level="2">Écriture multimédia</h2>
+                <p>Début de l'année scolaire 2021-2022, j'ai rejoint la Haute École de la Province de Liège au campus
+                    2000, situé sur le site de Jemeppe, afin de suivre des études en écriture multimédia. Cependant,
+                    je me suis finalement réorienté une dernière fois vers Seraing pour poursuivre des études dans le
+                    domaine du web.</p>
+                <a class="explore">Découvrir</a>
+            </div>
+            <div class="bottom_right">
+                <h2 aria-level="2">Instituteur maternelle</h2>
+                <p>Première année dans le supérieur en 2020-2021, j'ai décidé de poursuivre mes études dans l'animation
+                    et l'encadrement scolaire pour devenir instituteur maternel à la
+                    Haute école Libre Mosane Sainte-Croix. Cependant, après les examens du premier
+                    quadrimestre, j'ai compris que ce n'était pas pour moi. Je me suis donc orienté vers l'écriture
+                    multimédia à Jemeppe.</p>
+                <a class="explore">Découvrir</a>
+            </div>
         </div>
-        <div class="bottom_right">
-            <h2 aria-level="2">Instituteur maternelle</h2>
-            <p>Première année dans le supérieur en 2020-2021, j'ai décidé de poursuivre mes études dans l'animation
-                et l'encadrement scolaire pour devenir instituteur maternel à la
-                Haute école Libre Mosane Sainte-Croix. Cependant, après les examens du premier
-                quadrimestre, j'ai compris que ce n'était pas pour moi. Je me suis donc orienté vers l'écriture
-                multimédia à Jemeppe.</p>
-            <p class="explore">Découvrir</p>
-        </div>
-        <!--<div class="arrow"></div>-->
     </section>
     <section id="contact" itemscope itemtype="http://schema.org/Person">
-        <h2 aria-level="2">Connectez-vous</h2>
-        <p>Veuillez nous contacter si vous souhaitez en savoir plus sur Luca.</p>
+        <div class="arrow"></div>
+        <div class="intro_contact">
+            <h2 aria-level="2">Contactez-moi</h2>
+            <p>Veuillez me contacter si vous souhaitez en savoir plus sur moi.</p>
+        </div>
         <form action="#" method="post">
             <div id="first_name">
                 <label for="name"> PRÉNOM</label>
@@ -209,10 +240,6 @@
                 <label for="mail"> E-MAIL</label>
                 <input type="text" name="mail" id="mail" placeholder="infographie@hepl.be" itemprop="email">
             </div>
-            <!--<div id="work">
-                <label for="entreprise"> ENTREPRISE</label>
-                <input type="text" name="entreprise" id="entreprise" placeholder="HEPL">
-            </div>-->
             <div id="job">
                 <label for="emploi"> TITRE D'EMPLOI</label>
                 <select id="emploi" name="emploi">
@@ -223,20 +250,6 @@
                     <option itemprop="jobTitle" value="Autre">Autre</option>
                 </select>
             </div>
-            <!-- <div id="country">
-                 <label for="nation"> OÙ ÊTES-VOUS SITUÉ?</label>
-                 <select id="nation" name="country">
-                     <option value="" disabled selected>Sélectionnez votre status</option>
-                     <option value="france">France</option>
-                 </select>
-             </div>
-             <div id="vacation">
-                 <label for="dayoff"> QUEL EMPLACEMENT VOUS INTÉRESSE ?</label>
-                 <select id="dayoff" name="pays">
-                     <option value="" disabled selected>Sélectionnez votre status</option>
-                     <option value="france">France</option>
-                 </select>
-             </div>-->
             <div id="topic">
                 <label for="sujet"> SÉLECTIONNEZ UN SUJET D'INTÉRÊT</label>
                 <select id="sujet" name="topic">
@@ -252,16 +265,17 @@
                 <textarea id="commentaire" name="commentaire" rows="4" cols="50"
                           placeholder="Ajoutez un commentaire"></textarea>
             </div>
-            <p>Veuillez ne pas saisir de données personnelles sensibles ou d'informations confidentielles dans le
-                champ de texte libre, sauf si une question le demande expressément. En savoir plus sur notre
-                Termes et conditions d’utilisations, et notre politique de confidentialité.</p>
+            <p class="avertissement">Veuillez ne pas saisir de données personnelles sensibles ou d'informations
+                confidentielles dans le champ de texte libre, sauf si une question le demande expressément.
+                En savoir plus sur notre Termes et conditions d’utilisations, et notre politique de confidentialité.
+            </p>
             <div id="accord">
                 <input type="checkbox" id="accepter" name="accepter" required>
-                <label for="accepter"> Je suis d'accord pour La vie privée de Luca</label>
+                <label for="accepter"> J'accepte les conditions de Luca</label>
             </div>
             <div id="spam">
                 <input type="checkbox" id="pub" name="accepter">
-                <label for="accepter"> J'autorise Luca à m'envoyer des communications par e-mail</label>
+                <label for="accepter"> J'autorise Luca à me spammer par e-mail</label>
             </div>
             <div id="send">
                 <button type="submit">Entrer en contact</button>
@@ -269,6 +283,10 @@
         </form>
     </section>
     <aside id="link">
+        <div class="aside_logo">
+            <span class="logo"></span>
+            <span class="in"></span>
+        </div>
         <div class="top_navigation">
             <a href="#">Qui suis-je?</a>
             <a href="#">Compétences</a>
