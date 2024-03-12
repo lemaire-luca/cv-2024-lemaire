@@ -1,0 +1,119 @@
+.arrow {
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 96px;
+    height: 83px;
+    background-image: url("../../img/assets/asset 19.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#contact {
+    display: grid;
+    position: relative;
+    padding: 93px 1.5rem 50px;
+    background-color: black;
+    color: white;
+}
+
+.intro_contact {
+    text-align: center;
+}
+
+.intro_contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.intro_contact p {
+    font-size: 1.25rem;
+    padding: 1.125rem 0 60px;
+    line-height: 28px;
+}
+
+/*@media (min-width: 768px) {
+    #contact {
+        grid-template-columns: repeat(12, 1fr);
+        padding-top: 117px;
+        padding-bottom: 119px;
+    }
+}*/
+@media (min-width: 1440px) {
+    #contact {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 117px 0 121px 0;
+    }
+}
+
+/*@media (min-width: 768px) {
+    .intro_contact{
+        grid-area: 1 / 4 / 2 / 10;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    .intro_contact h2{
+        font-size: 64px;
+        line-height: 78px;
+    }
+}*/
+#commentaire {
+    width: 327px;
+    margin-bottom: 25px;
+}
+
+.avertissement {
+    font-size: 12px;
+    line-height: 1.125rem;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+#first_name, #last_name, #e-Mail, #job, #topic {
+    display: block;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+    font-size: 0.813rem;
+}
+
+input, select, #commentaire {
+    display: block;
+    box-sizing: border-box;
+    padding: 0.875rem;
+    background: none;
+    width: 100%;
+    border: 1px solid white;
+}
+
+#accord, #spam {
+    display: flex;
+}
+
+#accepter, #pub {
+    display: block;
+    height: 48px;
+    width: 22px;
+    margin: -1.125rem 7px 0 0;
+}
+
+button {
+    display: flex;
+    background-color: #1cdbbc;
+    border: none;
+    height: 44px;
+    width: 327px;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 1.5rem 0 2px;
+}

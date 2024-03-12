@@ -10,11 +10,16 @@
     <title>Luca Lemaire - CV</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/section/contact.css">
+    <link rel="stylesheet" href="css/section/parcours.css">
+    <link rel="stylesheet" href="css/section/projet.css">
+    <link rel="stylesheet" href="css/section/compétence.css">
 </head>
 <body>
-<header id="menu" itemscope itemtype="https://schema.org/Person" style="display: none">
-    <h1 aria-level="1" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Luca</span>
-        <span itemprop="familyName">Lemaire</span></h1>
+<header id="menu" itemscope itemtype="https://schema.org/Person">
+    <!--<h1 aria-level="1" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Luca</span>
+        <span itemprop="familyName">Lemaire</span></h1>-->
     <nav>
         <ul>
             <li><a href="#">Informations
@@ -24,7 +29,7 @@
             </a></li>
             <li><a href="#">Projets
                 <ul>
-                    <li><a href="#">Projet client</a></li>
+                    <li><a href="#">Projet en cours</a></li>
                 </ul>
             </a></li>
             <li><a href="#">Compétences</a></li>
@@ -32,17 +37,20 @@
             <li><a href="#">Contactez-moi</a></li>
         </ul>
     </nav>
-    <p>Connexion Client</p>
-    <p class="push">Contactez-moi</p>
+    <!--<p>Connexion Client</p>
+    <a class="push">Contactez-moi</a>-->
 </header>
 <main>
     <section id="home" itemscope itemtype="http://schema.org/Person">
         <div class="home_content">
             <h2 aria-level="2"><span itemprop="givenName">Luca</span> <span itemprop="familyName">Lemaire</span></h2>
-            <p><span itemprop="description">Je suis un jeune étudiant plein de dynamisme, je suis actuellement
-            en deuxième année d'un bachelier en infographie dans l'option web.</span></p>
+            <p><span itemprop="description">Je suis un jeune étudiant plein de dynamisme, actuellement passionné par
+                l'univers captivant de l'infographie et du web. Enthousiaste et créatif, je suis actuellement en
+                deuxième année d'un bachelier en infographie, avec une spécialisation dans l'option web.</span></p>
+            <div class="push">
+                <a>Regarder la vidéo</a>
+            </div>
         </div>
-        <p class="push">Regarder la vidéo</p>
     </section>
     <section id="info" itemscope itemtype="http://schema.org/Person">
         <div class="image_cover"></div>
@@ -53,7 +61,9 @@
                 j'acquiers actuellement des compétences approfondies dans le domaine. Au sein de mon cursus,
                 j'explore divers aspects de la création visuelle et de la programmation, cherchant à fusionner
                 l'esthétique et la fonctionnalité dans mes projets.</p>
-            <a class="push">Découvrez-moi</a>
+            <div class="push">
+                <a>Découvrez-moi</a>
+            </div>
         </div>
     </section>
     <section id="compétences" itemscope itemtype="http://schema.org/Skills">
@@ -61,7 +71,9 @@
             <h2 aria-level="2">Mes compétences</h2>
             <p>Toutes ses compétences ont été développées et entretenues tout au long de mon parcours dans un bachelier
                 en infographie. Au fil de cette formation, j’ai perfectionné mes compétences dans le domaine.</p>
-            <a class="push">Découvrez-moi</a>
+            <div class="push">
+                <a>Découvrez-moi</a>
+            </div>
         </div>
         <div class="all_skills">
             <article>
@@ -77,7 +89,7 @@
                 </div>
             </article>
             <article>
-                <img src="img/PHP-logo.svg.png" alt="Logo PHP">
+                <img src="img/PHP-logo.svg.png" alt="Logo PHP" width="">
                 <div>
                     <h4 aria-level="4"><abbr title="Hypertext Preprocessor">PHP</abbr></h4>
                     <p><abbr title="Hypertext Preprocessor">PHP</abbr> (Hypertext Preprocessor) : Au cours de ma
@@ -145,14 +157,20 @@
                 dans le cadre de mon cursus en infographie à l'école. L'objectif est d'aider les sans-abri en utilisant
                 mes compétences en développement. Je m'efforce de créer une initiative efficace, fournissant des
                 outils pour faciliter l'accès aux services essentiels et améliorer leur qualité de vie.</p>
-            <a class="push">En savoir plus</a>
+            <div class="push">
+                <a>En savoir plus</a>
+            </div>
         </div>
     </section>
     <section id="projets" itemscope itemtype="http://schema.org/CollectionPage">
-        <div class="titre">
-            <h2 aria-level="2">Projets</h2>
-            <p>Tous ces projets ont été réalisés dans le cadre de mon cursus scolaire en tant qu'infographiste
-                au sein de la Haute École de la Province de Liège.</p>
+        <div class="projet_titre">
+            <div class="titre">
+                <h2 aria-level="2">Projets</h2>
+            </div>
+            <div class="description">
+                <p>Tous ces projets ont été réalisés dans le cadre de mon cursus scolaire en tant qu'infographiste
+                    au sein de la Haute École de la Province de Liège.</p>
+            </div>
         </div>
         <div class="projet_ecole">
             <article id="Portfolio">
@@ -160,11 +178,8 @@
                 <div>
                     <h4 aria-level="4">Portfolio</h4>
                     <p>Ce projet va me permettre de montrer mon plein potentiel et mes capacités dans le web réuni dans
-                        une
-                        simple url
-                        résumant tous les projets que j'aurais pu entreprendre que ça soit dans le cadre de mon
-                        bachelier ou
-                        bien hors scolaire</p>
+                        une simple url résumant tous les projets que j'aurais pu entreprendre que ça soit dans le
+                        cadre de mon bachelier ou bien hors scolaire.</p>
                     <a href="#" class="more">Lire plus ></a>
                 </div>
             </article>
@@ -183,13 +198,14 @@
                 <div>
                     <h4 aria-level="4">2Minds</h4>
                     <p>Au cours de mon cursus scolaire, j'ai eu l'opportunité de concevoir ma propre
-                        application mobile permettant aux utilisateurs de tenir un journal intime des émotions</p>
+                        application mobile permettant aux utilisateurs de tenir un journal intime des émotions.</p>
                     <a href="#" class="more">Lire plus ></a>
                 </div>
             </article>
         </div>
-
-        <a class="push">Découvrez mes projets</a>
+        <div class="push">
+            <a>Découvrez mes projets</a>
+        </div>
     </section>
     <section id="parcours" itemscope itemtype="http://schema.org/EducationalOrganization">
         <div class="left">
@@ -288,17 +304,46 @@
             <span class="in"></span>
         </div>
         <div class="top_navigation">
-            <a href="#">Qui suis-je?</a>
-            <a href="#">Compétences</a>
-            <a href="#">Projets</a>
-            <a href="#">Parcours</a>
+            <ul>
+                <li style="font-weight: bold"><a href="#">Navigation</a></li>
+                <li><a href="#">Qui suis-je?</a></li>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="#">Projets en cours</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Parcours</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="ressources">
+            <ul>
+                <li style="font-weight: bold"><a href="#">Liens utiles</a></li>
+                <li><a href="https://www.alsacreations.com" itemprop="url">Alsa Créations</a></li>
+                <li><a href="https://caniuse.com" lang="en" itemprop="url">Can i use</a></li>
+                <li><a href="https://www.amazon.fr/Ergonomie-web-4e-%C3%A9dition-efficaces/dp/2212137362/ref=sr_1_1?dib=
+                eyJ2IjoiMSJ9.pFj4pDut-idStFFlEyEtpeQhgYhCU9e2LlHt-HeRwH4Y8zNCOnJQWs44uhgOyzNpCTUE_g2s3cdRBw7N6IOl3W2164
+                i_E_8F3wBiG10OmapSP6jEyTeineivFUU4PtliktWluwQ1x9OiFlcg6-Q7qg.62bz56hNrTFyaTygF9KAyRnBkDRXCJdl5IyZoXQUcmE
+                &dib_tag=se&qid=1709833640&refinements=p_27%3AAm%C3%A9lie+Boucher&s=books&sr=1-1" lang="en" itemprop="url
+                ">Amélie Boucher</a></li>
+                <li><a href="https://flexbox.help" itemprop="url">Flexbox</a></li>
+                <li><a href="https://css-tricks.com" itemprop="url">Css-tricks</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li style="font-weight: bold"><a href="#">Réseaux</a></li>
+                <li><a href="#" itemprop="url">Instagram</a></li>
+                <li><a href="#" itemprop="url">Facebook</a></li>
+                <li><a href="https://github.com/lemaire-luca" itemprop="url">Github</a></li>
+            </ul>
         </div>
         <div class="internet_link">
-            <a href="https://www.alsacreations.com">Alsa Créations</a>
-            <a href="https://caniuse.com" lang="en">Can i use</a>
-        </div>
-        <div>
-            <a href=""></a>
+            <ul>
+                <li style="font-weight: bold"><a href="#">Liens sympa</a></li>
+                <li><a href="https://www.rolex.com/fr" itemprop="url">Rolex</a></li>
+                <li><a href="https://www.desigual.com/fr_BE/" itemprop="url">Desigual</a></li>
+                <li><a href="https://www.action.com/fr-be/" itemprop="url">Action</a></li>
+            </ul>
         </div>
         <div class="hepl_logo">
             <a>
