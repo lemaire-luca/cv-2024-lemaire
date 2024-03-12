@@ -54,6 +54,7 @@
 
 .hepl_logo img {
     width: 275px;
+    height: auto;
     cursor: pointer;
     background-size: contain;
     margin-bottom: 40px;

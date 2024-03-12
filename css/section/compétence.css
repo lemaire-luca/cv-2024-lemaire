@@ -5,18 +5,18 @@
     padding: 0 1.5rem;
 }
 
-#titre_compétences {
+.titre_compétences {
     padding: 58px 0 1.875rem;
     margin: inherit;
 }
 
-#titre_compétences h2 {
+.titre_compétences h2 {
     font-size: 2rem;
     font-weight: bold;
     line-height: 40px;
 }
 
-#titre_compétences p {
+.titre_compétences p {
     padding-top: 1rem;
     font-size: 1.25rem;
     line-height: 28px;
