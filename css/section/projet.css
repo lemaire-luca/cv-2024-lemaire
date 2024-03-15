@@ -41,7 +41,7 @@
     padding: 25px;
 }
 
-.projet_ecole h4 {
+.projet_ecole h3 {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: bold;
@@ -82,6 +82,7 @@
 #projets .push {
     display: flex;
     padding: 0 0 50px 0;
+    margin: auto;
 }
 
 @media screen and (max-width: 320px) {
