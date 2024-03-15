@@ -1,13 +1,9 @@
 #link {
-    /*display: grid;
-    column-gap: 2rem;*/
     background-color: black;
     color: white;
     padding: 0 1.5rem 40px;
 }
-#link div{
-    padding-top: 20px;
-}
+
 .aside_logo {
     display: flex;
     flex-flow: row;
@@ -15,27 +11,12 @@
     border-top: 1px solid rgb(28, 219, 188);
 }
 
-/*.aside_logo .logo{
-    position: relative;
-    display: block;
-    left: -2px;
-    min-width: 93px;
-    width: 11.5rem;
-    height: 36px;
-    background-image: url("../img/assets/asset 23.png");
-    background-size: 100%;
+.all_links li:first-child {
+    margin: 20px 0 12px 0;
+    font-weight: bold;
 }
-.aside_logo .in{
-    position: relative;
-    display: block;
-    width: 36px;
-    height: 36px;
-    background-image: url("../img/assets/asset 21.svg");
-    background-size: 100%;
-    filter: invert(81%) sepia(69%) saturate(220%) hue-rotate(98deg) brightness(87%) contrast(92%);
-}*/
 
-.top_navigation a, .internet_link a, .social a, .ressources a{
+.top_navigation a, .internet_link a, .social a, .ressources a {
     display: flex;
     color: white;
     text-decoration: none;
@@ -43,9 +24,10 @@
     margin: 0 0 12px;
 }
 
-.internet_link li:first-child{
+.internet_link li:first-child {
     margin-top: 20px;
 }
+
 .hepl_logo {
     display: grid;
     flex-direction: column;
@@ -71,8 +53,9 @@ footer {
     padding: 19px 1.5rem 21px;
     display: flex;
 }
-footer li{
- padding: 0 30px 12px 0;
+
+footer li {
+    padding: 0 30px 12px 0;
 }
 
 footer a {
@@ -81,4 +64,39 @@ footer a {
     margin: 0 1.875rem 12px 0;
     font-size: 1.125rem;
     line-height: 1.25rem;
+}
+
+@media (min-width: 1440px) {
+    .aside_logo {
+        padding: 80px 0 60px;
+    }
+
+    .aside_logo span {
+        display: flex;
+    }
+
+    .logo, .in {
+        flex: 1;
+    }
+
+    .in {
+        justify-content: right;
+    }
+
+    #link {
+        display: grid;
+    }
+
+    .all_links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .internet_link li:first-child {
+        margin-top: 0;
+    }
+
+    #link a {
+        font-size: 1rem;
+    }
 }

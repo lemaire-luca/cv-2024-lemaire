@@ -13,17 +13,12 @@
 .titre {
     padding: 50px 0 24px;
     display: flex;
-    flex-flow: column;
-    grid-area: 1 / 1 / 2 / 3;
 }
 
 .description {
     display: flex;
-    flex-flow: column;
-    grid-area: 2 / 1 / 3 / 3;
     padding-bottom: 50px;
 }
-
 
 .projet_ecole {
     padding-bottom: 50px;
@@ -80,43 +75,13 @@
     text-decoration: none;
 }
 
-/*
-.projet_ecole a:hover{
-    color: #1cdbbc;
-
-}
-*/
-
 .more:hover {
     color: white;
 }
 
 #projets .push {
-    /*flex-wrap: nowrap;
-    cursor: pointer;
-    margin-top: inherit;
-    padding: 0 32px;
-    box-sizing: border-box;*/
-    /*position: relative;
     display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #1cdbbc;
-    border-radius: 1.5rem;
-    height: 44px;
-    padding: 1px 32px 0;
-    margin-top: 2rem;
-    color: black;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: 44px;
-    border-radius: 1.5rem;
-    background-color: rgb(28, 219, 188);
-    margin-bottom: 50px;
-    padding: 0 32px;
+    padding: 0 0 50px 0;
 }
 
 @media screen and (max-width: 320px) {
@@ -160,10 +125,11 @@
     }
 
     #projets .push {
-        grid-area: 3 / 1 / 4 / 13;
-        flex-direction: row;
         padding-top: 60px;
         padding-bottom: 100px;
+        display: block;
+        margin: auto;
+        text-align: center;
     }
 }
 
@@ -171,7 +137,6 @@
     #projets {
         padding: 0 32px;
     }
-
 }
 
 @media (min-width: 1440px) {

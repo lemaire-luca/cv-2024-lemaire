@@ -7,7 +7,6 @@
     <meta name="description" content="Il s’agit d’une reproduction d’un site existant dans lequel je vais pouvoir décrire la personne que je suis, les études précédente que j’ai pu faire ainsi que mes capacités et connaissance développer tout au long de mon bachelier en infographie dans l’option web dans la haute ecole de la province de liège à seraing">
     <!-- Plus de mots clés -->
     <meta name="keywords" content="cv, site référence,">
-    <!-- Attention lien href + title -->
     <meta name="author" content="Luca Lemaire">
     <title>Luca Lemaire - CV</title>
     <link rel="stylesheet" href="./css/app.css">
@@ -40,6 +39,9 @@
 </header>-->
 <main role="main">
     <section role="region" id="home" itemscope itemtype="https://schema.org/Person">
+        <video autoplay muted loop playsinline>
+            <source src="https://vialto.wpengine.com/wp-content/uploads/2023/03/website_banner_v2-1.mp4" type="video/mp4">
+        </video>
         <div class="home_content">
             <h2 role="heading" aria-level="2"><span itemprop="givenName">Luca</span> <span itemprop="familyName">Lemaire</span></h2>
             <p itemprop="description">
@@ -66,8 +68,8 @@
             </div>
         </div>
     </section>
-    <section role="region" id="compétences" itemscope itemtype="https://schema.org/skills">
-        <div class="titre_compétences">
+    <section role="region" id="competence" itemscope itemtype="https://schema.org/skills">
+        <div class="competence_title">
             <h2 role="heading" aria-level="2">Mes compétences</h2>
             <p>
                 Toutes ses compétences ont été développées et entretenues tout au long de mon parcours dans un bachelier
@@ -295,7 +297,7 @@
             <div class="job">
                 <label for="emploi">TITRE D’EMPLOI</label>
                 <select id="emploi" name="emploi">
-                    <option value="" disabled selected>Sélectionnez votre status</option>
+                    <option value="default" disabled selected>Sélectionnez votre status</option>
                     <option itemprop="jobTitle" value="Étudiant">Étudiant</option>
                     <option itemprop="jobTitle" value="Enseignant">Enseignant</option>
                     <option itemprop="jobTitle" value="Stagiaire">Stagiaire</option>
@@ -338,57 +340,59 @@
             Menu footer
         </h3>
         <div class="aside_logo">
-            <span class="logo"></span>
-            <span class="in"></span>
+            <span class="logo">internet</span>
+            <span class="in">instagram</span>
         </div>
-        <div class="top_navigation">
-            <ul>
-                <li><a href="#" title="Visitez à travers le site" role="link"><strong>Navigation</strong></a></li>
-                <li><a href="#" title="Visitez à travers le site" role="link" >Qui suis-je?</a></li>
-                <li><a href="#" title="Visitez à travers le site" role="link" >Compétences</a></li>
-                <li><a href="#" title="Visitez à travers le site" role="link" >Projets en cours</a></li>
-                <li><a href="#" title="Visitez à travers le site" role="link" >Projets</a></li>
-                <li><a href="#" title="Visitez à travers le site" role="link" >Parcours</a></li>
-                <li><a href="#" title="Visitez à travers le site" role="link" >Contact</a></li>
-            </ul>
-        </div>
-        <div class="ressources">
-            <ul>
-                <li><a href="#" title="Visitez les liens" role="link"><strong>Liens utiles</strong></a></li>
-                <li><a href="https://www.alsacreations.com" title="Visitez alsacreations.com" role="link" itemprop="url">Alsa Créations</a></li>
-                <li><a href="https://caniuse.com" title="Visitez caniuse.com" role="link" lang="en" itemprop="url">Can I use</a></li>
-                <li><a href="https://flexbox.help" title="Visitez flexbox.help" role="link" itemprop="url">Flexbox</a></li>
-                <li><a href="https://css-tricks.com" title="Visitez css-tricks.com" role="link" itemprop="url">Css-tricks</a></li>
-                <li><a href="#" title="Visitez " role="link">Coucou</a></li>
-            </ul>
-        </div>
-        <div class="social">
-            <ul>
-                <li><a href="#" title="Visitez "><strong>Réseaux</strong></a></li>
-                <li><a href="#" title="Visitez instagram" role="link" itemprop="url">Instagram</a></li>
-                <li><a href="#" title="Visitez facebook" role="link" itemprop="url">Facebook</a></li>
-                <li><a href="https://github.com/lemaire-luca" title="Visitez github.com/lemaire-luca" role="link" itemprop="url">Github</a></li>
-            </ul>
-        </div>
-        <div class="internet_link">
-            <ul>
-                <li><a href="#" title="Visitez " role="link"><strong>Liens sympa</strong></a></li>
-                <li><a href="https://www.rolex.com" title="Visitez www.rolex.com" role="link" itemprop="url">Rolex</a></li>
-                <li><a href="https://www.desigual.com" title="Visitez www.desigual.com" role="link" itemprop="url">Desigual</a></li>
-                <li><a href="https://www.action.com" title="Visitez www.action.com" role="link" itemprop="url">Action</a></li>
-            </ul>
-        </div>
-        <div class="hepl_logo">
-            <a>
-                <img src="./img/HEPL.jpg" alt="Logo HEPL" width="640" height="360">
-            </a>
-            <div itemscope itemtype="https://schema.org/Person">
-                <p itemprop="email">
-                    luca.lemaire@student.hepl.be
-                </p>
-                <p itemprop="telephone">
-                    0470 61 50 28
-                </p>
+        <div class="all_links">
+            <div class="top_navigation">
+                <ul>
+                    <li><a href="#" title="Visitez à travers le site" role="link"><strong>Navigation</strong></a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link" >Qui suis-je?</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link" >Compétences</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link" >Projets en cours</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link" >Projets</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link" >Parcours</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link" >Contact</a></li>
+                </ul>
+            </div>
+            <div class="ressources">
+                <ul>
+                    <li><a href="#" title="Visitez les liens" role="link"><strong>Liens utiles</strong></a></li>
+                    <li><a href="https://www.alsacreations.com" title="Visitez alsacreations.com" role="link" itemprop="url">Alsa Créations</a></li>
+                    <li><a href="https://caniuse.com" title="Visitez caniuse.com" role="link" lang="en" itemprop="url">Can I use</a></li>
+                    <li><a href="https://flexbox.help" title="Visitez flexbox.help" role="link" itemprop="url">Flexbox</a></li>
+                    <li><a href="https://css-tricks.com" title="Visitez css-tricks.com" role="link" itemprop="url">Css-tricks</a></li>
+                    <li><a href="#" title="Visitez " role="link">Coucou</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#" title="Visitez "><strong>Réseaux</strong></a></li>
+                    <li><a href="#" title="Visitez instagram" role="link" itemprop="url">Instagram</a></li>
+                    <li><a href="#" title="Visitez facebook" role="link" itemprop="url">Facebook</a></li>
+                    <li><a href="https://github.com/lemaire-luca" title="Visitez github.com/lemaire-luca" role="link" itemprop="url">Github</a></li>
+                </ul>
+            </div>
+            <div class="internet_link">
+                <ul>
+                    <li><a href="#" title="Visitez " role="link"><strong>Liens sympa</strong></a></li>
+                    <li><a href="https://www.rolex.com" title="Visitez www.rolex.com" role="link" itemprop="url">Rolex</a></li>
+                    <li><a href="https://www.desigual.com" title="Visitez www.desigual.com" role="link" itemprop="url">Desigual</a></li>
+                    <li><a href="https://www.action.com" title="Visitez www.action.com" role="link" itemprop="url">Action</a></li>
+                </ul>
+            </div>
+            <div class="hepl_logo">
+                <a>
+                    <img src="./img/HEPL.jpg" alt="Logo HEPL" width="640" height="360">
+                </a>
+                <div itemscope itemtype="https://schema.org/Person">
+                    <p itemprop="email">
+                        luca.lemaire@student.hepl.be
+                    </p>
+                    <p itemprop="telephone">
+                        0470 61 50 28
+                    </p>
+                </div>
             </div>
         </div>
     </aside>

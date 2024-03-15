@@ -35,31 +35,6 @@
     line-height: 28px;
 }
 
-/*@media (min-width: 768px) {
-    #contact {
-        grid-template-columns: repeat(12, 1fr);
-        padding-top: 117px;
-        padding-bottom: 119px;
-    }
-}*/
-@media (min-width: 1440px) {
-    #contact {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 117px 0 121px 0;
-    }
-}
-
-/*@media (min-width: 768px) {
-    .intro_contact{
-        grid-area: 1 / 4 / 2 / 10;
-        padding-bottom: 60px;
-        text-align: center;
-    }
-    .intro_contact h2{
-        font-size: 64px;
-        line-height: 78px;
-    }
-}*/
 #commentaire {
     width: 327px;
     margin-bottom: 25px;
@@ -85,12 +60,36 @@ label {
 }
 
 input, select, #commentaire {
+    font-size: 1rem;
+    color: #808080;
     display: block;
     box-sizing: border-box;
     padding: 0.875rem;
     background: none;
     width: 100%;
     border: 1px solid white;
+}
+
+input:focus, select:focus, #commentaire:focus {
+    border-color: #1cdbbc;
+    outline: 0;
+}
+
+.job select {
+    background-image: url("../../img/Petite_flèche.svg");
+    background-position: right;
+    background-size: 26px 26px, 26px 26px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.job select:focus {
+    background-image: url("../../img/Petite_flèche.svg");
+    background-position: right;
+    background-size: 26px 26px, 26px 26px;
+    background-repeat: no-repeat;
+    border-color: #1cdbbc;
+    outline: 0;
 }
 
 .accord, .spam {
@@ -116,4 +115,28 @@ button {
     justify-content: center;
     font-size: 1rem;
     margin: 1.5rem 0 2px;
+}
+
+@media (min-width: 768px){
+    .send {
+        display: grid;
+        justify-items: center;
+    }
+
+    button {
+        width: max-content;
+    }
+
+    .accord label, .spam label {
+        letter-spacing: 2px;
+    }
+}
+
+@media (min-width: 1440px) {
+    #contact {
+        padding: 117px 0 121px 0;
+    }
+    .intro_contact h2{
+        font-size: 64px;
+    }
 }
