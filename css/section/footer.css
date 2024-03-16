@@ -5,12 +5,22 @@
 }
 
 .aside_logo {
-    display: flex;
-    flex-flow: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 50px 0;
     border-top: 1px solid rgb(28, 219, 188);
 }
-
+.aside_logo span{
+    flex: 1;
+}
+.logo img{
+    width: 70px;
+    height: auto;
+}
+.in img{
+    width: 36px;
+    height: auto;
+}
 .all_links li:first-child {
     margin: 20px 0 12px 0;
     font-weight: bold;

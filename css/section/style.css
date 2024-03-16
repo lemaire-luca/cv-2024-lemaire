@@ -17,12 +17,15 @@ header {
     top: 0;
     background-color: black;
     color: white;
-    background-image: url("../../img/menu.svg");
-    background-repeat: no-repeat;
-    background-position: right;
 }
 
-header h1, header ul, header p, header a {
+.logo_name img {
+    padding-top: 10px;
+    width: 50px;
+    height: auto;
+}
+
+header ul, header p, header a, .top_header {
     display: none;
 }
 
@@ -32,6 +35,9 @@ header nav {
     flex-direction: row;
     margin: 8px 24px;
     height: 4rem;
+    background-image: url("../../img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 header a {

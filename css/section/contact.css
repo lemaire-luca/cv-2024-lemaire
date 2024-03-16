@@ -77,20 +77,20 @@ input:focus, select:focus, #commentaire:focus {
 
 .job select {
     background-image: url("../../img/Petite_flèche.svg");
-    background-position: right;
+    background-position: calc(100% - 20px);
     background-size: 26px 26px, 26px 26px;
     background-repeat: no-repeat;
     width: 100%;
 }
 
-.job select:focus {
+/*.job select:focus {
     background-image: url("../../img/Petite_flèche.svg");
     background-position: right;
     background-size: 26px 26px, 26px 26px;
     background-repeat: no-repeat;
     border-color: #1cdbbc;
     outline: 0;
-}
+}*/
 
 .accord, .spam {
     display: flex;
