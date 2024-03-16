@@ -1,5 +1,5 @@
-@import 'reset.css';
-@import 'style.css';
+@import 'config/reset.css';
+@import 'section/style.css';
 @import 'section/footer.css';
 @import 'section/contact.css';
 @import 'section/parcours.css';

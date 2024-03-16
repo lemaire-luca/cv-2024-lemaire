@@ -17,7 +17,7 @@ header {
     top: 0;
     background-color: black;
     color: white;
-    background-image: url("../img/menu.svg");
+    background-image: url("../../img/menu.svg");
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -110,7 +110,7 @@ video {
 
 .image_cover {
     position: relative;
-    background-image: url("../img/Panda.jpg");
+    background-image: url("../../img/Panda.jpg");
     aspect-ratio: 565 / 337;
     background-position: center;
     background-size: cover;
@@ -159,7 +159,7 @@ h2 {
 
 
 .image_cover_1 {
-    background-image: url("../img/Panda.jpg");
+    background-image: url("../../img/Panda.jpg");
     aspect-ratio: 565 / 337;
     background-size: cover;
     background-position: center;
