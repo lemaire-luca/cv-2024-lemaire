@@ -11,17 +11,26 @@ abbr {
 }
 
 header {
+    position: sticky;
+    z-index: 100;
     display: grid;
     top: 0;
     background-color: black;
     color: white;
+    background-image: url("../img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+header h1, header ul, header p, header a {
+    display: none;
 }
 
 header nav {
     display: flex;
     position: relative;
     flex-direction: row;
-    margin-top: 1rem;
+    margin: 8px 24px;
     height: 4rem;
 }
 
@@ -32,8 +41,6 @@ header a {
 
 
 #home {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     position: relative;
     z-index: 2;
 }
@@ -43,19 +50,17 @@ video {
     position: absolute;
     object-fit: cover;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .home_content {
     display: flex;
     position: relative;
-    grid-area: 1 / 1 / 2 / 3;
     flex-direction: column;
     align-items: center;
     color: white;
     padding: 3.125rem 1.5rem;
     text-align: center;
-    z-index: 2;
 }
 
 .home_content h2 {
@@ -85,6 +90,10 @@ video {
     text-decoration: none;
 }
 
+.home_content a:hover {
+    background-color: #8bf5e3;
+}
+
 @media (min-width: 768px) {
     .home_content h2 {
         font-size: 4rem;
@@ -96,7 +105,7 @@ video {
     display: grid;
     column-gap: 32px;
     row-gap: 20px;
-    padding-top: 150px;
+    padding-top: 84px;
 }
 
 .image_cover {
@@ -110,9 +119,6 @@ video {
 }
 
 .introduction {
-    display: flex;
-    flex-flow: column;
-    text-align: left;
     padding: 1.5rem 1.5rem 5rem;
     width: 20.438rem;
 }
@@ -124,7 +130,6 @@ h2 {
 }
 
 .introduction p {
-    box-sizing: border-box;
     font-size: 1.125rem;
     padding-top: 1.5rem;
     line-height: 1.625rem;
@@ -152,9 +157,6 @@ h2 {
     }
 }
 
-#projet_cours {
-    display: block;
-}
 
 .image_cover_1 {
     background-image: url("../img/Panda.jpg");

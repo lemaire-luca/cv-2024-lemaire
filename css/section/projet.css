@@ -4,7 +4,6 @@
 }
 
 .titre h2 {
-    display: block;
     font-size: 2rem;
     line-height: 40px;
     font-weight: bold;
@@ -12,11 +11,9 @@
 
 .titre {
     padding: 50px 0 24px;
-    display: flex;
 }
 
 .description {
-    display: flex;
     padding-bottom: 50px;
 }
 
@@ -54,9 +51,6 @@
 }
 
 #projets article {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 1.5rem;
     overflow: hidden;
