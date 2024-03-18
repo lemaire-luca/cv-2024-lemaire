@@ -19,9 +19,13 @@ header {
     color: white;
 }
 
+.logo_name {
+    flex: 1;
+}
+
 .logo_name img {
-    padding-top: 10px;
-    width: 50px;
+    padding-top: 15px;
+    width: 30px;
     height: auto;
 }
 
@@ -35,6 +39,13 @@ header nav {
     flex-direction: row;
     margin: 8px 24px;
     height: 4rem;
+    top: -2px;
+    right: -10px;
+}
+
+.burger_menu {
+    flex: 1;
+    height: 48px;
     background-image: url("../../img/menu.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -44,7 +55,6 @@ header a {
     color: white;
     text-decoration: none;
 }
-
 
 #home {
     position: relative;
