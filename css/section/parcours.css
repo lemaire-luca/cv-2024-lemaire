@@ -1,133 +1,64 @@
-#parcours {
+.course {
     display: grid;
     padding: 0 1.5rem;
     background-color: #063636;
 }
 
 @media screen and (max-width: 320px) {
-    #parcours {
+    .course {
         padding: 0;
     }
 }
 
-.parcours__left img {
+.course__left img {
     width: auto;
     height: 230px;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
-.parcours__left {
-    padding: 50px 0;
+.course__left {
+    padding: 3.125rem 0;
     color: white;
     text-align: center;
 }
 
-.parcours__left h2 {
+.course__left h2 {
     font-weight: bold;
     font-size: 2rem;
-    line-height: 40px;
+    line-height: 2.5rem;
     padding-bottom: 1.5rem;
 }
 
-.parcours__left p {
+.course__left p {
     font-size: 1.125rem;
-    line-height: 26px;
+    line-height: 1.625rem;
 }
 
-
-.parcours__top_right {
-    padding: 40px 1.5rem;
+.course__top_right {
+    padding: 2.5rem 1.5rem;
     background-color: #8bf5e3;
 }
 
-.parcours__top_right h2, .parcours__bottom_right h2 {
-    font-size: 28px;
-    line-height: 38px;
+.course__top_right h2, .course__bottom_right h2 {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
     font-weight: bold;
 }
 
-.parcours__top_right p, .parcours__bottom_right p {
-    padding-top: 12px;
+.course__top_right p, .course__bottom_right p {
+    padding-top: 0.75rem;
     line-height: 1.5rem;
 }
 
-@media (min-width: 768px) {
-    .parcours__left h2 {
-        font-size: 3rem;
-        line-height: 56px;
-    }
 
-    .parcours__right h2 {
-        font-size: 2.25rem;
-        line-height: 48px;
-    }
-}
-
-.parcours__right {
-    margin-bottom: 80px;
+.course__right {
+    margin-bottom: 5rem;
     background-color: white;
 }
 
-.parcours__bottom_right {
-    padding: 40px 1.5rem;
+.course__bottom_right {
+    padding: 2.5rem 1.5rem;
     background-color: rgba(139, 245, 227, 0.5);
-}
-
-/*@media (min-width: 768px) {
-    .parcours__left {
-        padding: 119px 42px 119px 0;
-    }
-
-    .parcours__top_right, .parcours__bottom_right {
-        padding: 80px 0 104px 24px;
-    }
-
-    #parcours {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .parcours__right {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-}
-
-@media (min-width: 1024px) {
-    #parcours {
-        padding: 0 32px;
-    }
-}
-*/
-@media (min-width: 1440px) {
-    #parcours{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .parcours__right {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
-    .parcours__top_right{
-        padding: 80px 0 104px 20px;
-    }
-    .parcours__top_right, .parcours__bottom_right{
-        padding-left: 56px;
-    }
-    .explore{
-        width: max-content;
-        text-align: center;
-    }
-    /*.parcours__left h2, .parcours__left p {
-        padding: 0 97px 0 83px;
-    }
-
-    .parcours__left p {
-        padding-top: 20px;
-    }
-
-    .parcours__top_right, .parcours__bottom_right {
-        padding: 80px 80px 0 76px;
-    }*/
 }
 
 .explore {
@@ -135,7 +66,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 44px;
+    height: 2.75rem;
     margin-top: 1.5rem;
     padding: 0 2rem;
     border-radius: 1.5rem;
@@ -147,4 +78,67 @@
 
 .explore:hover {
     background-color: white;
+}
+
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+
+    .course__right {
+        display: grid;
+        margin-bottom: 0;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .course__top_right {
+        padding: 5rem 0 6.5rem 1.25rem;
+    }
+
+    .course__top_right, .course__bottom_right {
+        padding-left: 3.5rem;
+    }
+
+    .explore {
+        width: max-content;
+        text-align: center;
+    }
+
+    .course__left h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .course__right h2 {
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .course {
+        display: grid;
+        height: 94vh;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .course__right {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .course__top_right, .course__bottom_right {
+        padding: 5rem 3.75rem 6.5rem 5rem;
+    }
+
+    .course__left p {
+        padding: 0 5rem;
+    }
+
+    .explore {
+        width: max-content;
+        text-align: center;
+    }
 }

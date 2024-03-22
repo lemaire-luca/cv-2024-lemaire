@@ -11,7 +11,12 @@
     background-position: center center;
 }
 
-#contact {
+form {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.contact {
     display: grid;
     position: relative;
     padding: 93px 1.5rem 50px;
@@ -35,12 +40,12 @@
     line-height: 28px;
 }
 
-#commentaire {
+#comment {
     width: 327px;
     margin-bottom: 25px;
 }
 
-.avertissement {
+.warning {
     font-size: 12px;
     line-height: 1.125rem;
     margin-bottom: 25px;
@@ -59,7 +64,7 @@ label {
     font-size: 0.813rem;
 }
 
-input, select, #commentaire {
+input, select, #comment {
     font-size: 1rem;
     color: #808080;
     display: block;
@@ -70,7 +75,15 @@ input, select, #commentaire {
     border: 1px solid white;
 }
 
-input:focus, select:focus, #commentaire:focus {
+input, #comment {
+    color: white;
+}
+
+option[value="default"] {
+    color: #808080;
+}
+
+input:focus, select:focus, #comment:focus {
     border-color: #1cdbbc;
     outline: 0;
 }
@@ -96,7 +109,7 @@ input:focus, select:focus, #commentaire:focus {
     display: flex;
 }
 
-#accepter, #autoriser {
+#accept, #authorize {
     display: block;
     height: 48px;
     width: 22px;
@@ -116,10 +129,17 @@ button {
     font-size: 1rem;
     margin: 1.5rem 0 2px;
 }
-button:hover{
+
+button:hover {
     background-color: #8bf5e3;
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
+    .arrow {
+        width: 138px;
+        height: 119px;
+    }
+
     .send {
         display: grid;
         justify-items: center;
@@ -135,10 +155,11 @@ button:hover{
 }
 
 @media (min-width: 1440px) {
-    #contact {
+    .contact {
         padding: 117px 0 121px 0;
     }
-    .intro_contact h2{
+
+    .intro_contact h2 {
         font-size: 64px;
     }
 }

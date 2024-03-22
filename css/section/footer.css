@@ -1,90 +1,113 @@
-#link {
+.link {
     background-color: black;
     color: white;
-    padding: 0 1.5rem 40px;
+    padding: 0 1.5rem 2.5rem;
 }
 
 .aside_logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px 0;
+    padding: 3.125rem 0;
     border-top: 1px solid rgb(28, 219, 188);
 }
-.aside_logo a{
+
+.aside_logo a {
     display: flex;
     flex: 1;
 }
-.aside_logo .in{
+
+.aside_logo .in {
     flex-direction: column;
     align-items: flex-end;
 }
-.logo img{
+
+.logo img {
     width: 70px;
     height: auto;
 }
-.in img{
+
+.in img {
     width: 36px;
     height: auto;
 }
+
 .all_links li:first-child {
-    margin: 20px 0 12px 0;
+    margin: 1.25rem 0 0.75rem 0;
     font-weight: bold;
 }
 
-.top_navigation a, .internet_link a, .social a, .ressources a {
+.top_navigation a, .internet_link a, .social a, .resources a {
     display: flex;
     color: white;
     text-decoration: none;
     font-size: 1.25rem;
-    margin: 0 0 12px;
+    margin: 0 0 0.75rem;
 }
 
 .internet_link li:first-child {
-    margin-top: 20px;
+    margin-top: 1.25rem;
+    font-weight: bold;
 }
-
-/*
-.hepl_logo {
-    display: grid;
-    flex-direction: column;
-}
-*/
 
 .hepl_logo img {
     width: 275px;
     height: auto;
     cursor: pointer;
     background-size: contain;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .hepl_logo p {
-    margin-bottom: 12px;
-    font-size: 20px;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
 }
 
 footer {
     background-color: #063636;
-    padding: 19px 1.5rem 21px;
+    padding: 1.188rem 1.5rem 1.313rem;
     display: flex;
 }
 
 footer li {
-    padding: 0 30px 12px 0;
+    padding: 0 1.875rem 0.75rem 0;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    margin: 0 1.875rem 12px 0;
+    margin: 0 1.875rem 0.75rem 0;
     font-size: 1.125rem;
     line-height: 1.25rem;
 }
 
+@media (min-width: 880px) {
+    .all_links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .hepl_logo {
+        border-left: 2px solid white;
+        margin-top: 1.875rem;
+        padding-left: 1.875rem;
+    }
+}
+
+
+@media (min-width: 1029px) {
+    .all_links ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all_links ul li a:first-child {
+        margin-top: 0.75rem;
+    }
+}
+
 @media (min-width: 1440px) {
     .aside_logo {
-        padding: 80px 0 60px;
+        padding: 5rem 2rem 3.75rem;
     }
 
     .aside_logo span {
@@ -99,20 +122,16 @@ footer a {
         justify-content: right;
     }
 
-    #link {
+    .link {
         display: grid;
     }
 
-    .all_links {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .internet_link li:first-child {
-        margin-top: 0;
-    }
-
-    #link a {
+    .link a {
         font-size: 1rem;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
     }
 }

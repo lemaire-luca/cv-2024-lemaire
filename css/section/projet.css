@@ -1,15 +1,15 @@
-#projets {
+.projects {
     padding: 0 1.5rem;
     background-color: #f7f5f5;
 }
 
-.titre h2 {
+.title h2 {
     font-size: 2rem;
     line-height: 40px;
     font-weight: bold;
 }
 
-.titre {
+.title {
     padding: 50px 0 24px;
 }
 
@@ -17,46 +17,46 @@
     padding-bottom: 50px;
 }
 
-.projet_ecole {
+.project_school {
     padding-bottom: 50px;
     display: grid;
     row-gap: 50px;
 }
 
-.projet_ecole img {
+.project_school img {
     cursor: pointer;
     width: 100%;
     height: auto;
     transition: transform 0.25s ease;
 }
 
-.projet_ecole img:hover {
+.project_school img:hover {
     transform: scale(1.1);
 }
 
-.projet_ecole div {
+.project_school div {
     padding: 25px;
 }
 
-.projet_ecole h3 {
+.project_school h3 {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: bold;
 }
 
-.projet_ecole p {
+.project_school p {
     padding-top: 1rem;
     cursor: pointer;
     line-height: 1.5rem;
 }
 
-#projets article {
+.projects article {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 1.5rem;
     overflow: hidden;
 }
 
-#projets article:hover {
+.projects article:hover {
     color: white;
     background-color: black;
     transition: background-color 0.7s ease;
@@ -73,39 +73,39 @@
     color: white;
 }
 
-#projets .push {
+.projects .push {
     display: flex;
     padding: 0 0 50px 0;
     margin: auto;
 }
 
 @media screen and (max-width: 320px) {
-    #projets {
+    .projects {
         padding: 0;
     }
 
 }
 
 @media (min-width: 768px) {
-    .projet_ecole {
+    .project_school {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 1.25rem;
         padding-bottom: 0;
     }
 
-    .projet_titre {
+    .projects_title {
         display: flex;
     }
 
-    .titre, .description {
+    .title, .description {
         flex: 1;
     }
 
-    .titre {
+    .title {
         padding: 100px 35px 60px 0;
     }
 
-    .titre h2 {
+    .title h2 {
         font-size: 48px;
         line-height: 56px;
     }
@@ -119,7 +119,7 @@
         line-height: 28px;
     }
 
-    #projets .push {
+    .projects .push {
         padding-top: 60px;
         padding-bottom: 100px;
         display: block;
@@ -129,21 +129,21 @@
 }
 
 @media (min-width: 1024px) {
-    #projets {
+    .projects {
         padding: 0 32px;
     }
 }
 
 @media (min-width: 1440px) {
-    #projets {
+    .projects {
         padding: 0 80px;
     }
 
-    .titre {
+    .title {
         padding: 100px 160px 88px 0;
     }
 
-    .projet_ecole article {
+    .project_school article {
         width: 400px;
     }
 }

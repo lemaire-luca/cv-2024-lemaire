@@ -12,56 +12,61 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-<header role="banner" id="menu" itemscope itemtype="https://schema.org/Person">
-    <h1 role="heading" aria-level="1" class="hidden" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Luca</span>
+<header role="banner" class="top_page" itemscope itemtype="https://schema.org/Person">
+    <h1 role="heading" aria-level="1" class="hidden" itemscope itemtype="https://schema.org/Person"><span
+            itemprop="name">Luca</span>
         <span itemprop="familyName">Lemaire</span>
     </h1>
-    <nav role="navigation">
+    <nav role="navigation" class="header_navigation">
         <div class="logo_name">
-                <img src="./img/LL_logo.png" alt="Logo Lemaire Luca" width="1480" height="1271">
+            <img src="./img/LL_logo.png" alt="Logo Lemaire Luca" width="1480" height="1271">
         </div>
-        <div class="burger_menu"></div>
+        <div class="burger_menu">
+            <img src="./img/menu.svg" alt="burger menu" width="48" height="48">
+        </div>
         <ul>
-            <li><a href="#home" title="Visitez a travers le site">Informations</a></li>
+            <li><a href="#" title="Visitez a travers le site">Informations</a></li>
             <li><a href="#" title="Visitez a travers le site">Projets</a></li>
             <li><a href="#" title="Visitez a travers le site">Compétences</a></li>
             <li><a href="#" title="Visitez a travers le site">Parcours</a></li>
             <li><a href="#" title="Visitez a travers le site">Contactez-moi</a></li>
         </ul>
-        <!-- List depuis informations -->
+        <!--&lt;!&ndash; List depuis informations &ndash;&gt;
         <ul class="informations__list">
             <li><a href="#" title="Visitez a travers le site">Qui suis-je?</a></li>
         </ul>
-        <!-- Liste depuis projet -->
+        &lt;!&ndash; Liste depuis projet &ndash;&gt;
         <ul>
             <li><a href="#" title="Visitez a travers le site">Projet en cours</a></li>
-        </ul>
+        </ul>-->
     </nav>
-    <div class="top_header">
-        <ul>
-            <span>
-                <img src="">
-            </span>
-            <li><a href="#"><span>FR</span></a></li>
-            <li><a href="#"><span>EN</span></a></li>
-        </ul>
-        <a href="#">Connexion Client</a>
-        <a href="#" class="push">Contactez-moi</a>
-        <form class="search_bar" method="post" action="#">
-            <span>
-                <img src="">
-            </span>
-            <input type="search" placeholder="Recherche">
-        </form>
-    </div>
+    <!--<div class="top_header">
+         <ul>
+             <span>
+                 <img src="">
+             </span>
+             <li><a href="#"><span>FR</span></a></li>
+             <li><a href="#"><span>EN</span></a></li>
+         </ul>
+         <a href="#">Connexion Client</a>
+         <a href="#" class="push">Contactez-moi</a>
+         <form class="search_bar" method="post" action="#">
+             <span>
+                 <img src="">
+             </span>
+             <input type="search" placeholder="Recherche">
+         </form>
+     </div>-->
 </header>
 <main role="main">
-    <section id="home" itemscope itemtype="https://schema.org/Person">
+    <section class="home" itemscope itemtype="https://schema.org/Person">
         <video autoplay muted loop playsinline>
-            <source src="https://vialto.wpengine.com/wp-content/uploads/2023/03/website_banner_v2-1.mp4" type="video/mp4">
+            <source src="https://vialto.wpengine.com/wp-content/uploads/2023/03/website_banner_v2-1.mp4"
+                    type="video/mp4">
         </video>
         <div class="home_content">
-            <h2 role="heading" aria-level="2"><span itemprop="givenName">Luca</span> <span itemprop="familyName">Lemaire</span></h2>
+            <h2 role="heading" aria-level="2"><span itemprop="givenName">Luca</span> <span
+                    itemprop="familyName">Lemaire</span> Web Developer</h2>
             <p itemprop="description">
                 Je suis un jeune étudiant plein de dynamisme, actuellement passionné par
                 l’univers captivant de l’infographie et du web. Enthousiaste et créatif, je suis actuellement en
@@ -72,7 +77,7 @@
             </div>
         </div>
     </section>
-    <section id="info">
+    <section class="info">
         <div class="image_cover"></div>
         <div class="introduction">
             <h2 role="heading" aria-level="2">Découvrez qui je suis</h2>
@@ -86,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section id="competence" itemscope itemtype="https://schema.org/skills">
+    <section class="competence" itemscope itemtype="https://schema.org/skills">
         <div class="competence_title">
             <h2 role="heading" aria-level="2">Mes compétences</h2>
             <p>
@@ -99,7 +104,7 @@
         </div>
         <div class="all_skills">
             <article>
-                <img src="img/HTML.png" alt="Logo HTML" width="512" height="512">
+                <img src="img/html.png" alt="Logo HTML" width="512" height="512">
                 <div class="all_skills__card">
                     <h3 role="heading" aria-level="3">
                         <abbr title="HyperText Markup Language">HTML</abbr>
@@ -114,7 +119,7 @@
                 </div>
             </article>
             <article>
-                <img src="img/PHP.png" alt="Logo PHP" width="148" height="80">
+                <img src="img/php.png" alt="Logo PHP" width="512" height="512">
                 <div class="all_skills__card">
                     <h3 role="heading" aria-level="3">
                         <abbr title="Hypertext Preprocessor">PHP</abbr>
@@ -129,7 +134,7 @@
                 </div>
             </article>
             <article>
-                <img src="img/Css.png" alt="Logo CSS" width="80" height="80">
+                <img src="img/css.png" alt="Logo CSS" width="512" height="512">
                 <div class="all_skills__card">
                     <h3 role="heading" aria-level="3">
                         <abbr title="Cascading Style Sheets">CSS</abbr>
@@ -144,12 +149,13 @@
                 </div>
             </article>
             <article>
-                <img src="img/JavaScript.png" alt="Logo JAVASCRIPT" width="128" height="80">
+                <img src="img/js.png" alt="Logo JAVASCRIPT" width="512" height="512">
                 <div class="all_skills__card">
                     <h3 role="heading" aria-level="3">JAVASCRIPT</h3>
                     <p>
                         JavaScript : Découvert au cours de ma deuxième année de bachelier en web, JavaScript s’est
-                        révélé être un langage de programmation côté client essentiel pour rendre les pages web interactives et dynamiques.
+                        révélé être un langage de programmation côté client essentiel pour rendre les pages web
+                        interactives et dynamiques.
                     </p>
                 </div>
             </article>
@@ -187,9 +193,9 @@
             </article>
         </div>
     </section>
-    <section id="projet_cours" itemscope itemtype="https://schema.org/CreativeWork">
+    <section class="project_course" itemscope itemtype="https://schema.org/CreativeWork">
         <div class="image_cover_1"></div>
-        <div class="projet__cours">
+        <div class="project__course">
             <h2 role="heading" aria-level="2">Projet en cours</h2>
             <p>
                 Je travaille actuellement sur un projet de l’
@@ -203,9 +209,9 @@
             </div>
         </div>
     </section>
-    <section id="projets" itemscope itemtype="https://schema.org/CollectionPage">
-        <div class="projet_titre">
-            <div class="titre">
+    <section class="projects" itemscope itemtype="https://schema.org/CollectionPage">
+        <div class="projects_title">
+            <div class="title">
                 <h2 role="heading" aria-level="2">Projets</h2>
             </div>
             <div class="description">
@@ -215,10 +221,10 @@
                 </p>
             </div>
         </div>
-        <div class="projet_ecole">
-            <article id="Portfolio">
+        <div class="project_school">
+            <article class="Portfolio">
                 <img src="img/Portfolio.jpg" alt="Image Portfolio" width="626" height="417">
-                <div class="projet__card">
+                <div class="project__card">
                     <h3 role="heading" aria-level="3">Portfolio</h3>
                     <p>
                         Ce projet va me permettre de montrer mon plein potentiel et mes capacités dans le web réuni dans
@@ -228,9 +234,9 @@
                     <a href="#" title="Découvrir le projet" role="link" class="more">Lire plus &#8594;</a>
                 </div>
             </article>
-            <article id="Client">
+            <article class="Client">
                 <img src="img/SEF.jpg" alt="Image projet client" width="940" height="630">
-                <div class="projet__card">
+                <div class="project__card">
                     <h3 role="heading" aria-level="3">Projet Client</h3>
                     <p>
                         Ce projet nous a été attribué dans le cadre de notre programme scolaire en deuxième année
@@ -241,9 +247,9 @@
                     <a href="#" title="Découvrir le projet" role="link" class="more">Lire plus &#8594;</a>
                 </div>
             </article>
-            <article id="Minds">
+            <article class="Minds">
                 <img src="img/2Minds.png" alt="Image 2Minds" width="435" height="280">
-                <div class="projet__card">
+                <div class="project__card">
                     <h3 role="heading" aria-level="3">2Minds</h3>
                     <p>
                         Au cours de mon cursus scolaire, j’ai eu l’opportunité de concevoir ma propre
@@ -257,8 +263,8 @@
             <a href="#" role="link">Découvrez mes projets</a>
         </div>
     </section>
-    <section id="parcours" itemscope itemtype="https://schema.org/EducationalOrganization">
-        <div class="parcours__left">
+    <section class="course" itemscope itemtype="https://schema.org/EducationalOrganization">
+        <div class="course__left">
             <img src="img/Code.png" alt="logo de balise html" width="148" height="209">
             <h2 role="heading" aria-level="2">Infographie</h2>
             <p>
@@ -267,8 +273,8 @@
                 devenir développeur web grâce aux techniques que j’apprends tout au long de mon cursus.
             </p>
         </div>
-        <div class="parcours__right">
-            <div class="parcours__top_right">
+        <div class="course__right">
+            <div class="course__top_right">
                 <h2 role="heading" aria-level="2">Écriture multimédia</h2>
                 <p>
                     Début de l’année scolaire 2021-2022, j’ai rejoint la Haute École de la Province de Liège au campus
@@ -278,7 +284,7 @@
                 </p>
                 <a href="#" role="link" class="explore">Découvrir</a>
             </div>
-            <div class="parcours__bottom_right">
+            <div class="course__bottom_right">
                 <h2 role="heading" aria-level="2">Instituteur maternelle</h2>
                 <p>
                     Première année dans le supérieur en 2020-2021, j’ai décidé de poursuivre mes études dans l’animation
@@ -291,7 +297,7 @@
             </div>
         </div>
     </section>
-    <section id="contact" itemscope itemtype="https://schema.org/Person">
+    <section class="contact" itemscope itemtype="https://schema.org/Person">
         <div class="arrow"></div>
         <div class="intro_contact">
             <h2 role="heading" aria-level="2">Contactez-moi</h2>
@@ -313,8 +319,8 @@
                 <input type="text" name="mail" id="mail" placeholder="infographie@hepl.be" itemprop="email">
             </div>
             <div class="job">
-                <label for="emploi">TITRE D’EMPLOI</label>
-                <select id="emploi" name="emploi">
+                <label for="business">TITRE D’EMPLOI</label>
+                <select id="business" name="business">
                     <option value="default" disabled selected>Sélectionnez votre status</option>
                     <option itemprop="jobTitle" value="Étudiant">Étudiant</option>
                     <option itemprop="jobTitle" value="Enseignant">Enseignant</option>
@@ -323,8 +329,8 @@
                 </select>
             </div>
             <div class="topic">
-                <label for="sujet">SÉLECTIONNEZ UN SUJET D’INTÉRÊT</label>
-                <select id="sujet" name="topic">
+                <label for="about">SÉLECTIONNEZ UN SUJET D’INTÉRÊT</label>
+                <select id="about" name="topic">
                     <option value="" disabled selected>Sélectionnez votre sujet</option>
                     <option value="Compétences">Compétences</option>
                     <option value="Parcours scolaire">Parcours scolaire</option>
@@ -333,75 +339,91 @@
                 </select>
             </div>
             <div class="help">
-                <label for="commentaire">COMMENT PUIS-JE VOUS AIDER?</label>
-                <textarea id="commentaire" name="commentaire" rows="4" cols="50" placeholder="Ajoutez un commentaire"></textarea>
+                <label for="comment">COMMENT PUIS-JE VOUS AIDER?</label>
+                <textarea id="comment" name="comment" rows="4" cols="50"
+                          placeholder="Ajoutez un commentaire"></textarea>
             </div>
-            <p class="avertissement">Veuillez ne pas saisir de données personnelles sensibles ou d’informations
+            <p class="warning">Veuillez ne pas saisir de données personnelles sensibles ou d’informations
                 confidentielles dans le champ de texte libre, sauf si une question le demande expressément.
                 En savoir plus sur notre Termes et conditions d’utilisations, et notre politique de confidentialité.
             </p>
             <div class="accord">
-                <input type="checkbox" id="accepter" name="accepter" required>
-                <label for="accepter">J’accepte les conditions de Luca</label>
+                <input type="checkbox" id="accept" name="accept" required>
+                <label for="accept">J’accepte les conditions de Luca</label>
             </div>
             <div class="spam">
-                <input type="checkbox" id="autoriser" name="accepter">
-                <label for="autoriser">J’autorise Luca à me spammer par e-mail</label>
+                <input type="checkbox" id="authorize" name="accept">
+                <label for="authorize">J’autorise Luca à me spammer par e-mail</label>
             </div>
             <div class="send">
                 <button type="submit">Entrer en contact</button>
             </div>
         </form>
     </section>
-    <aside id="link">
+    <aside class="link">
         <h3 class="hidden" aria-level="3" role="heading">
             Menu footer
         </h3>
         <div class="aside_logo">
-            <a href="index.html" class="logo"><img src="./img/LL_logo.png" alt="Logo Lemaire Luca" width="1480" height="1271"></a>
-            <a href="https://www.instagram.com/lemaire.luca_/" class="in"><img src="./img/instragram_logo.png" alt="logo Instagram" width="512" height="512"></a>
+            <a href="index.html" class="logo"><img src="./img/LL_logo.png" alt="Logo Lemaire Luca" width="1480"
+                                                   height="1271"></a>
+            <a href="https://www.instagram.com/lemaire.luca_/" class="in"><img src="./img/instragram_logo.png"
+                                                                               alt="logo Instagram" width="512"
+                                                                               height="512"></a>
         </div>
         <div class="all_links">
             <div class="top_navigation">
                 <ul>
-                    <li><a href="#" title="Visitez à travers le site" role="link"><strong>Navigation</strong></a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link" >Qui suis-je?</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link" >Compétences</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link" >Projets en cours</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link" >Projets</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link" >Parcours</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link" >Contact</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link">Navigation</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link">Qui suis-je?</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link">Compétences</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link">Projets en cours</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link">Projets</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link">Parcours</a></li>
+                    <li><a href="#" title="Visitez à travers le site" role="link">Contact</a></li>
                 </ul>
             </div>
-            <div class="ressources">
+            <div class="resources">
                 <ul>
-                    <li><a href="#" title="Visitez les liens" role="link"><strong>Ressources</strong></a></li>
-                    <li><a href="https://www.alsacreations.com" title="Visitez alsacreations.com" role="link" itemprop="url">Alsa Créations</a></li>
-                    <li><a href="https://caniuse.com" title="Visitez caniuse.com" role="link" lang="en" itemprop="url">Can I use</a></li>
-                    <li><a href="https://flexbox.help" title="Visitez flexbox.help" role="link" itemprop="url">Flexbox</a></li>
-                    <li><a href="https://css-tricks.com" title="Visitez css-tricks.com" role="link" itemprop="url">Css-tricks</a></li>
-                    <li><a href="https://developer.mozilla.org/fr/" title="Visitez www.developer.mozilla.org" role="link">MDN</a></li>
+                    <li><a href="#" title="Visitez les liens" role="link">Ressources</a></li>
+                    <li><a href="https://www.alsacreations.com" title="Visitez alsacreations.com" role="link"
+                           itemprop="url">Alsa Créations</a></li>
+                    <li><a href="https://caniuse.com" title="Visitez caniuse.com" role="link" lang="en" itemprop="url">Can
+                        I use</a></li>
+                    <li><a href="https://flexbox.help" title="Visitez flexbox.help" role="link"
+                           itemprop="url">Flexbox</a></li>
+                    <li><a href="https://css-tricks.com" title="Visitez css-tricks.com" role="link" itemprop="url">Css-tricks</a>
+                    </li>
+                    <li><a href="https://developer.mozilla.org/fr/" title="Visitez www.developer.mozilla.org"
+                           role="link">MDN</a></li>
                     <li><a href="https://codepen.io" title="Visitez www.codepen.io" role="link">Codepen</a></li>
                 </ul>
             </div>
             <div class="social">
                 <ul>
-                    <li><a href="#" title="Visitez mes réseaux sociaux"><strong>Réseaux sociaux</strong></a></li>
-                    <li><a href="https://www.instagram.com/lemaire.luca_/" title="Visitez instagram" role="link" itemprop="url">Instagram</a></li>
+                    <li><a href="#" title="Visitez mes réseaux sociaux">Réseaux sociaux</a></li>
+                    <li><a href="https://www.instagram.com/lemaire.luca_/" title="Visitez instagram" role="link"
+                           itemprop="url">Instagram</a></li>
                     <li><a href="#" title="Visitez facebook" role="link" itemprop="url">Facebook</a></li>
-                    <li><a href="https://github.com/lemaire-luca" title="Visitez github.com/lemaire-luca" role="link" itemprop="url">Github</a></li>
+                    <li><a href="https://github.com/lemaire-luca" title="Visitez github.com/lemaire-luca" role="link"
+                           itemprop="url">Github</a></li>
                 </ul>
             </div>
             <div class="internet_link">
                 <ul>
-                    <li><a href="#" title="Visitez " role="link"><strong>Liens sympa</strong></a></li>
-                    <li><a href="https://www.apple.com/" title="Visitez www.apple.com" role="link" itemprop="url">Apple</a></li>
-                    <li><a href="https://www.hepl.be/fr" title="Visitez www.hepl.be" role="link" itemprop="url">HEPL</a></li>
-                    <li><a href="https://www.rolex.com" title="Visitez www.rolex.com" role="link" itemprop="url">Rolex</a></li>
-                    <li><a href="https://www.action.com" title="Visitez www.action.com" role="link" itemprop="url">Action</a></li>
-                    <li><a href="https://www.jdsports.be/page/voetbal/" title="Visitez www.jdsport.be" role="link" itemprop="url">JD</a></li>
-                    <li><a href="https://o-tacos.com/" title="Visitez www.o-tacos.com" role="link" itemprop="url">O'tacos</a></li>
-                    <li><a href="https://fr.mancity.com/" title="Visitez www.mancity.com" role="link" itemprop="url">Manchester City</a></li>
+                    <li><a href="#" title="Visitez " role="link">Liens sympa</a></li>
+                    <li><a href="https://www.apple.com/" title="Visitez www.apple.com" role="link"
+                           itemprop="url">Apple</a></li>
+                    <li><a href="https://www.hepl.be/fr" title="Visitez www.hepl.be" role="link" itemprop="url">HEPL</a>
+                    </li>
+                    <li><a href="https://www.rolex.com" title="Visitez www.rolex.com" role="link"
+                           itemprop="url">Rolex</a></li>
+                    <li><a href="https://www.action.com" title="Visitez www.action.com" role="link" itemprop="url">Action</a>
+                    </li>
+                    <li><a href="https://www.jdsports.be/page/voetbal/" title="Visitez www.jdsport.be" role="link"
+                           itemprop="url">JD</a></li>
+                    <li><a href="https://fr.mancity.com/" title="Visitez www.mancity.com" role="link" itemprop="url">Manchester
+                        City</a></li>
 
                 </ul>
             </div>
@@ -426,7 +448,8 @@
         <ul>
             <li><a href="#" title="Visitez instagram" role="link" itemprop="url">Instagram</a></li>
             <li><a href="#" title="Visitez facebook" role="link" itemprop="url">Facebook</a></li>
-            <li><a href="https://github.com/lemaire-luca" title="Visitez github.com/lemaire-luca" role="link" itemprop="url">Github</a></li>
+            <li><a href="https://github.com/lemaire-luca" title="Visitez github.com/lemaire-luca" role="link"
+                   itemprop="url">Github</a></li>
         </ul>
     </nav>
 </footer>
