@@ -90,9 +90,26 @@ header ul, header p, header a, .top_header {
     }
 }
 
-/*.header_navigation ul li a {
-    font-size: 20px;
+/*.cookies {
+    padding: 40px;
+    background-color: #063636;
+    border: 1px solid #1cdbbc;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.cookies button {
+    background-color: #1cdbbc;
+    border-radius: 0;
+    color: black;
+
 }*/
+
 .home {
     position: relative;
     z-index: 2;

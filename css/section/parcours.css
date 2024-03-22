@@ -12,7 +12,7 @@
 
 .course__left img {
     width: auto;
-    height: 230px;
+    height: 310px;
     margin-bottom: 1.5rem;
 }
 
@@ -120,7 +120,6 @@
 @media (min-width: 1440px) {
     .course {
         display: grid;
-        height: 94vh;
         grid-template-columns: 1fr 1fr;
     }
 
