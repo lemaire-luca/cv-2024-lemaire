@@ -30,7 +30,7 @@ header {
     height: auto;
 }
 
-header ul, header p, header a, .top_header {
+header ul, header p, header a, .top_header, .top_page .push {
     display: none;
 }
 
@@ -59,6 +59,11 @@ header ul, header p, header a, .top_header {
     text-decoration: none;
 }
 
+.top_page .push {
+    position: absolute;
+    right: 32px;
+}
+
 @media (min-width: 956px) {
     .header_navigation ul {
         display: flex;
@@ -70,12 +75,6 @@ header ul, header p, header a, .top_header {
         top: 25px;
     }
 
-    .header_navigation ul li a::after {
-        background-image: url("img/Petite_flèche.svg");
-        background-size: 26px 26px, 26px 26px;
-        background-repeat: no-repeat;
-    }
-
     .logo_name img {
         width: 70px;
         height: auto;
@@ -85,7 +84,7 @@ header ul, header p, header a, .top_header {
         display: none;
     }
 
-    header ul, header p, header a, .top_header {
+    header ul, header p, header a, .top_header, .top_page .push {
         display: grid;
     }
 }
@@ -113,22 +112,17 @@ header ul, header p, header a, .top_header {
 .home {
     position: relative;
     z-index: 2;
-    /*height: 100vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 video {
-    width: 100%;
-    /*top: -90px;*/
     position: relative;
-    /*background-position: center;
-    position: absolute;
-    object-fit: cover;
     width: 100%;
-    min-height: 94vh;
-    padding-top: 50px;*/
+    top: 50px;
+    object-fit: cover;
+    height: 100vh;
 }
 
 .home_content {
@@ -140,7 +134,6 @@ video {
     padding: 3.125rem 1.5rem;
     text-align: center;
     max-width: 620px;
-
 }
 
 .home_content h2 {
@@ -181,67 +174,8 @@ video {
     }
 }
 
-.info {
-    display: grid;
-    column-gap: 32px;
-    row-gap: 20px;
-}
-
-.image_cover {
-    position: relative;
-    background-image: url("../../img/Panda.jpg");
-    aspect-ratio: 565 / 337;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-}
-
-.introduction {
-    padding: 1.5rem 1.5rem 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-}
-
-.introduction p {
-    font-size: 1.125rem;
-    padding-top: 1.5rem;
-    line-height: 1.625rem;
-}
-
-@media (max-width: 319px) {
-    .introduction {
-        padding: 0;
-    }
-
-    .introduction h2 {
-        padding-top: 1.875rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .image_cover {
-        height: 654px;
-        width: 720px;
-        max-width: 50vw;
-    }
-
-    .introduction {
-        padding-top: 3.125rem;
-        padding-right: 0.625rem;
-    }
-}
-
-
 .image_cover_1 {
-    background-image: url("../../img/Panda.jpg");
+    background-image: url("../../img/web.jpg");
     aspect-ratio: 565 / 337;
     background-size: cover;
     background-position: center;
@@ -287,7 +221,6 @@ h2 {
 
     .image_cover_1 {
         height: 654px;
-        width: 720px;
         max-width: 50vw;
         order: 2;
     }

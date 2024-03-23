@@ -130,6 +130,10 @@ footer a {
         font-size: 1rem;
     }
 
+    .hepl_logo {
+        padding-right: 50px;
+    }
+
     footer ul {
         display: flex;
         flex-direction: row;

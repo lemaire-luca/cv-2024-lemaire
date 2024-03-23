@@ -1,0 +1,57 @@
+.info {
+    display: grid;
+    column-gap: 32px;
+    row-gap: 20px;
+}
+
+.image_cover {
+    position: relative;
+    background-image: url("../../img/Panda.jpg");
+    aspect-ratio: 565 / 337;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.introduction {
+    padding: 1.5rem 1.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+}
+
+.introduction p {
+    font-size: 1.125rem;
+    padding-top: 1.5rem;
+    line-height: 1.625rem;
+}
+
+@media (max-width: 319px) {
+    .introduction {
+        padding: 0;
+    }
+
+    .introduction h2 {
+        padding-top: 1.875rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .image_cover {
+        height: 654px;
+        width: 720px;
+        max-width: 50vw;
+    }
+
+    .introduction {
+        padding-top: 3.125rem;
+        padding-right: 0.625rem;
+    }
+}

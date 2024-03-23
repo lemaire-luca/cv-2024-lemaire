@@ -158,6 +158,9 @@ button:hover {
     .contact {
         padding: 117px 0 121px 0;
     }
+    form{
+        width: 400px;
+    }
 
     .intro_contact h2 {
         font-size: 64px;
