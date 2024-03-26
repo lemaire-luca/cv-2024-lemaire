@@ -18,25 +18,27 @@
     </h1>
     <nav role="navigation" class="header_navigation">
         <div class="logo_name">
-            <img src="./img/LL_logo.png" alt="Logo Lemaire Luca" width="1480" height="1271">
+            <a href="#" title="Page principale" data-target="home">
+                <img src="./img/LL_logo.png" alt="Logo Lemaire Luca" width="1480" height="1271">
+            </a>
         </div>
         <div class="burger_menu">
             <img src="./img/menu.svg" alt="burger menu" width="48" height="48">
         </div>
         <ul>
-            <li><a href="#" title="Visitez a travers le site">Informations</a></li>
-            <li><a href="#" title="Visitez a travers le site">Projets</a></li>
-            <li><a href="#" title="Visitez a travers le site">Compétences</a></li>
-            <li><a href="#" title="Visitez a travers le site">Parcours</a></li>
-            <li><a href="#" title="Visitez a travers le site">Contactez-moi</a></li>
+            <li><a href="#" title="Visitez a travers le site" data-target="info" role="navigation">Informations</a></li>
+            <li><a href="#" title="Découvrez mes compétences" data-target="competence" role="navigation">Compétences</a></li>
+            <li><a href="#" title="Quelques projets réaliser" data-target="projects" role="navigation">Projets</a></li>
+            <li><a href="#" title="Visitez mon parcours" data-target="course" role="navigation">Parcours</a></li>
+            <li><a href="#" title="Formulaire de contact" data-target="contact" role="navigation">Contactez-moi</a></li>
         </ul>
         <!--&lt;!&ndash; List depuis informations &ndash;&gt;
         <ul class="informations__list">
-            <li><a href="#" title="Visitez a travers le site">Qui suis-je?</a></li>
+            <li><a href="#" title="Découvrez qui je suis">Qui suis-je?</a></li>
         </ul>
         &lt;!&ndash; Liste depuis projet &ndash;&gt;
         <ul>
-            <li><a href="#" title="Visitez a travers le site">Projet en cours</a></li>
+            <li><a href="#" title="Mon projet en cours">Projet en cours</a></li>
         </ul>-->
     </nav>
     <!--<div class="top_header">
@@ -65,7 +67,7 @@
     </div>-->
 </header>
 <main role="main">
-    <section class="home" itemscope itemtype="https://schema.org/Person">
+    <section class="home" data-section="home" itemscope itemtype="https://schema.org/Person">
         <video autoplay muted loop playsinline>
             <source src="https://vialto.wpengine.com/wp-content/uploads/2023/03/website_banner_v2-1.mp4"
                     type="video/mp4">
@@ -79,11 +81,11 @@
                 deuxième année d’un bachelier en infographie, avec une spécialisation dans l’option web.
             </p>
             <div class="push">
-                <a href="#" title="Regarder la vidéo" role="link">Regarder la vidéo</a>
+                <a href="#" title="Regarder la vidéo" role="button">Regarder la vidéo</a>
             </div>
         </div>
     </section>
-    <section class="info">
+    <section class="info" data-section="info">
         <div class="image_cover"></div>
         <div class="introduction">
             <h2 role="heading" aria-level="2">Découvrez qui je suis</h2>
@@ -97,7 +99,7 @@
             </div>
         </div>
     </section>
-    <section class="competence" itemscope itemtype="https://schema.org/skills">
+    <section class="competence" data-section="competence" itemscope itemtype="https://schema.org/skills">
         <div class="competence_title">
             <h2 role="heading" aria-level="2">Mes compétences</h2>
             <p>
@@ -199,7 +201,7 @@
             </article>
         </div>
     </section>
-    <section class="project_course" itemscope itemtype="https://schema.org/CreativeWork">
+    <section class="project_course" data-section="project_course" itemscope itemtype="https://schema.org/CreativeWork">
         <div class="image_cover_1"></div>
         <div class="project__course">
             <h2 role="heading" aria-level="2">Projet en cours</h2>
@@ -215,7 +217,7 @@
             </div>
         </div>
     </section>
-    <section class="projects" itemscope itemtype="https://schema.org/CollectionPage">
+    <section class="projects" data-section="projects" itemscope itemtype="https://schema.org/CollectionPage">
         <div class="projects_title">
             <div class="title">
                 <h2 role="heading" aria-level="2">Projets</h2>
@@ -269,9 +271,9 @@
             <a href="#" role="link">Découvrez mes projets</a>
         </div>
     </section>
-    <section class="course" itemscope itemtype="https://schema.org/EducationalOrganization">
+    <section class="course" data-section="course" itemscope itemtype="https://schema.org/EducationalOrganization">
         <div class="course__left">
-            <img src="img/Code.png" alt="logo de balise html" width="148" height="209">
+            <img src="img/laptop.png" alt="logo de balise html" width="16" height="16">
             <h2 role="heading" aria-level="2">Infographie</h2>
             <p>
                 Actuellement en deuxième année d’un bachelier en infographie à la Haute École de la Province de Liège,
@@ -303,7 +305,7 @@
             </div>
         </div>
     </section>
-    <section class="contact" itemscope itemtype="https://schema.org/Person">
+    <section class="contact" data-section="contact" itemscope itemtype="https://schema.org/Person">
         <div class="arrow"></div>
         <div class="intro_contact">
             <h2 role="heading" aria-level="2">Contactez-moi</h2>
@@ -371,70 +373,56 @@
             Menu footer
         </h3>
         <div class="aside_logo">
-            <a href="index.html" class="logo"><img src="./img/LL_logo.png" alt="Logo Lemaire Luca" width="1480"
-                                                   height="1271"></a>
-            <a href="https://www.instagram.com/lemaire.luca_/" class="in"><img src="./img/instragram_logo.png"
-                                                                               alt="logo Instagram" width="512"
-                                                                               height="512"></a>
+            <a href="index.html" role="navigation" class="logo" data-target="home">
+                <img src="./img/LL_logo.png" alt="Logo Lemaire Luca" width="1480" height="1271"></a>
+            <a href="https://www.instagram.com/lemaire.luca_/" role="link" class="in">
+                <img src="./img/instragram_logo.png" alt="logo Instagram" width="512" height="512"></a>
         </div>
         <div class="all_links">
             <div class="top_navigation">
                 <ul>
-                    <li><a href="#" title="Visitez à travers le site" role="link">Navigation</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link">Qui suis-je?</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link">Compétences</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link">Projets en cours</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link">Projets</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link">Parcours</a></li>
-                    <li><a href="#" title="Visitez à travers le site" role="link">Contact</a></li>
+                    <li><a href="#" title="Visitez les liens" role="navigation">Navigation</a></li>
+                    <li><a href="#" title="Découvrez qui je suis" role="navigation" data-target="info">Qui suis-je?</a></li>
+                    <li><a href="#" title="Découvrez mes compétences" role="navigation" data-target="competence">Compétences</a></li>
+                    <li><a href="#" title="Mon projet en cours" role="navigation" data-target="project_course">Projets en cours</a></li>
+                    <li><a href="#" title="Quelques projets" role="navigation" data-target="projects">Projets</a></li>
+                    <li><a href="#" title="Visitez mon parcours" role="navigation" data-target="course">Parcours</a></li>
+                    <li><a href="#" title="Formulaire de contact" role="navigation" data-target="contact">Contact</a></li>
                 </ul>
             </div>
             <div class="resources">
                 <ul>
                     <li><a href="#" title="Visitez les liens" role="link">Ressources</a></li>
-                    <li><a href="https://www.alsacreations.com" title="Visitez alsacreations.com" role="link"
-                           itemprop="url">Alsa Créations</a></li>
-                    <li><a href="https://caniuse.com" title="Visitez caniuse.com" role="link" lang="en" itemprop="url">Can
-                        I use</a></li>
-                    <li><a href="https://flexbox.help" title="Visitez flexbox.help" role="link"
-                           itemprop="url">Flexbox</a></li>
-                    <li><a href="https://css-tricks.com" title="Visitez css-tricks.com" role="link" itemprop="url">Css-tricks</a>
-                    </li>
-                    <li><a href="https://developer.mozilla.org/fr/" title="Visitez www.developer.mozilla.org"
-                           role="link">MDN</a></li>
+                    <li><a href="https://www.alsacreations.com" title="Visitez alsacreations.com" role="link" itemprop="url">Alsa Créations</a></li>
+                    <li><a href="https://caniuse.com" title="Visitez caniuse.com" role="link" lang="en" itemprop="url">Can I use</a></li>
+                    <li><a href="https://flexbox.help" title="Visitez flexbox.help" role="link" itemprop="url">Flexbox</a></li>
+                    <li><a href="https://css-tricks.com" title="Visitez css-tricks.com" role="link" itemprop="url">Css-tricks</a></li>
+                    <li><a href="https://developer.mozilla.org/fr/" title="Visitez www.developer.mozilla.org" role="link">MDN</a></li>
                     <li><a href="https://codepen.io" title="Visitez www.codepen.io" role="link">Codepen</a></li>
                 </ul>
             </div>
             <div class="social">
                 <ul>
                     <li><a href="#" title="Visitez mes réseaux sociaux">Réseaux sociaux</a></li>
-                    <li><a href="https://www.instagram.com/lemaire.luca_/" title="Visitez instagram" role="link"
-                           itemprop="url">Instagram</a></li>
+                    <li><a href="https://www.instagram.com/lemaire.luca_/" title="Visitez instagram" role="link" itemprop="url">Instagram</a></li>
                     <li><a href="#" title="Visitez facebook" role="link" itemprop="url">Facebook</a></li>
-                    <li><a href="https://github.com/lemaire-luca" title="Visitez github.com/lemaire-luca" role="link"
-                           itemprop="url">Github</a></li>
+                    <li><a href="https://github.com/lemaire-luca" title="Visitez github.com/lemaire-luca" role="link" itemprop="url">Github</a></li>
                 </ul>
             </div>
             <div class="internet_link">
                 <ul>
                     <li><a href="#" title="Visitez " role="link">Liens sympa</a></li>
-                    <li><a href="https://www.apple.com/" title="Visitez www.apple.com" role="link"
-                           itemprop="url">Apple</a></li>
-                    <li><a href="https://www.hepl.be/fr" title="Visitez www.hepl.be" role="link" itemprop="url">HEPL</a>
-                    </li>
-                    <li><a href="https://www.rolex.com" title="Visitez www.rolex.com" role="link"
-                           itemprop="url">Rolex</a></li>
-                    <li><a href="https://www.action.com" title="Visitez www.action.com" role="link" itemprop="url">Action</a>
-                    </li>
-                    <li><a href="https://www.jdsports.be/page/voetbal/" title="Visitez www.jdsport.be" role="link"
-                           itemprop="url">JD</a></li>
-                    <li><a href="https://fr.mancity.com/" title="Visitez www.mancity.com" role="link" itemprop="url">Manchester
-                        City</a></li>
+                    <li><a href="https://www.apple.com/" title="Visitez www.apple.com" role="link" itemprop="url">Apple</a></li>
+                    <li><a href="https://www.hepl.be/fr" title="Visitez www.hepl.be" role="link" itemprop="url">HEPL</a></li>
+                    <li><a href="https://www.rolex.com" title="Visitez www.rolex.com" role="link" itemprop="url">Rolex</a></li>
+                    <li><a href="https://www.action.com" title="Visitez www.action.com" role="link" itemprop="url">Action</a></li>
+                    <li><a href="https://www.jdsports.be/page/voetbal/" title="Visitez www.jdsport.be" role="link" itemprop="url">JD</a></li>
+                    <li><a href="https://fr.mancity.com/" title="Visitez www.mancity.com" role="link" itemprop="url">Manchester City</a></li>
 
                 </ul>
             </div>
             <div class="hepl_logo">
-                <a>
+                <a href="#" role="link">
                     <img src="./img/HEPL.jpg" alt="Logo HEPL" width="640" height="360">
                 </a>
                 <div itemscope itemtype="https://schema.org/Person">

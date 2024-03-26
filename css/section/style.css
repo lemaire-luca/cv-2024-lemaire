@@ -22,15 +22,16 @@ header {
 
 .logo_name {
     flex: 1;
+    cursor: pointer;
 }
 
-.logo_name img {
+.logo_name a img {
     padding-top: 10px;
     width: 30px;
     height: auto;
 }
 
-header ul, header p, header a, .top_header, .top_page .push {
+header ul, header p, .top_header, .top_page .push {
     display: none;
 }
 
@@ -75,7 +76,7 @@ header ul, header p, header a, .top_header, .top_page .push {
         top: 25px;
     }
 
-    .logo_name img {
+    .logo_name a img {
         width: 70px;
         height: auto;
     }
@@ -84,8 +85,11 @@ header ul, header p, header a, .top_header, .top_page .push {
         display: none;
     }
 
-    header ul, header p, header a, .top_header, .top_page .push {
+    header ul, header p, .top_header, .top_page .push {
         display: grid;
+    }
+    .header_navigation ul li a:hover {
+        color: #1cdbbc;
     }
 }
 
@@ -120,7 +124,6 @@ header ul, header p, header a, .top_header, .top_page .push {
 video {
     position: relative;
     width: 100%;
-    top: 50px;
     object-fit: cover;
     height: 100vh;
 }

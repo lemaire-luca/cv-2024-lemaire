@@ -88,22 +88,31 @@ input:focus, select:focus, #comment:focus {
     outline: 0;
 }
 
-.job select {
-    background-image: url("../../img/Petite_flèche.svg");
-    background-position: calc(100% - 20px);
-    background-size: 26px 26px, 26px 26px;
-    background-repeat: no-repeat;
-    width: 100%;
+#business, #about {
+    appearance: none;
 }
 
-/*.job select:focus {
+.job, .topic {
+    position: relative;
+}
+
+.job::after, .topic::after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: 3px;
+    bottom: 0;
+    width: 50px;
+    pointer-events: none;
     background-image: url("../../img/Petite_flèche.svg");
-    background-position: right;
-    background-size: 26px 26px, 26px 26px;
+    background-position: calc(100% - 10px);
     background-repeat: no-repeat;
-    border-color: #1cdbbc;
-    outline: 0;
-}*/
+    border-left: 1px solid #fff;
+}
+
+.job::after:focus {
+    border-left-color: #1cdbbc;
+}
 
 .accord, .spam {
     display: flex;
@@ -158,7 +167,8 @@ button:hover {
     .contact {
         padding: 117px 0 121px 0;
     }
-    form{
+
+    form {
         width: 400px;
     }
 
